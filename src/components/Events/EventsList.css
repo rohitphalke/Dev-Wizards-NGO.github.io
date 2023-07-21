@@ -1,0 +1,10 @@
+.EventsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.EventsList .expenses-list__fallback {
+  color: #fff;
+  text-align: center;
+}
