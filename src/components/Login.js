@@ -18,6 +18,13 @@ const Login = () => {
     const container = document.querySelector(".container");
     container.classList.add("sign-up-mode2");
   }
+  const sign_in = () => {
+    let username = document.getElementById('sign_in_name').target.value
+    let password = document.getElementById('sign_in_passowrd').target.value
+  }
+  const sign_up = () => {
+
+  }
   return (
     <div className="login_body">
         <div className="container">
@@ -32,7 +39,7 @@ const Login = () => {
                     <i className="fas fa-lock"></i>
                     <input type="password" placeholder="Password"/>
                 </div>
-                <input type="submit" value="Login" className="btn"/>
+                <input type="submit" value="Login" className="btn" onclick={sign_in}/>
                 <p className="social-text">Or Sign in with our NGO</p>
                 <div className="social-media">
                     <a href="/" className="social-icon">
@@ -53,18 +60,22 @@ const Login = () => {
             <form action="" className="sign-up-form">
                 <h2 className="title">Sign up</h2>
                 <div className="input-field">
+                    <i className="fas fa-file-signature"></i>
+                    <input type="text" placeholder="Name" id='sign_up_name'/>
+                </div>
+                <div className="input-field">
                     <i className="fas fa-user"></i>
-                    <input type="text" placeholder="Username"/>
+                    <input type="text" placeholder="Username" id='sign_up_username'/>
                 </div>
                 <div className="input-field">
                     <i className="fas fa-envelope"></i>
-                    <input type="text" placeholder="Email"/>
+                    <input type="text" placeholder="Email" id='sign_up_email'/>
                 </div>
                 <div className="input-field">
                     <i className="fas fa-lock"></i>
-                    <input type="password" placeholder="Password"/>
+                    <input type="password" placeholder="Password" id='sign_up_password'/>
                 </div>
-                <input type="submit" value="Sign up" className="btn"/>
+                <input type="submit" value="Sign up" className="btn" onclick={sign_up}/>
                 <p className="social-text">Or Sign in with social platform</p>
                 <div className="social-media">
                     <a href="/" className="social-icon">

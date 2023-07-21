@@ -6,7 +6,7 @@ import "./SingleEvent.css";
 
 const SingleEvent = (props) => {
   if (props.singleYear.length === 0) {
-    return <h2 className="">Found no events.</h2>;
+    return <h2 className="">Oops! No events found.</h2>;
   }
 
   return (
