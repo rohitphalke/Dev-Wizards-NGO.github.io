@@ -1,5 +1,5 @@
 import './App.css';
-import './rohit.css';
+import './css_files/rohit.css';
 import Login from './components/Login'
 import Navbar from './components/Navbar'
 import Gallery from './components/Gallery'
