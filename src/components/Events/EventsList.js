@@ -4,7 +4,7 @@ import "./EventsList.css";
 
 const EventsList = (props) => {
   if (props.eventItems.length === 0) {
-    return <h2 className="expenses-list__fallback">Found no events.</h2>;
+    return <h2 className="expenses-list__fallback">Oops! No events found.</h2>;
   }
 
   return (
