@@ -1,0 +1,37 @@
+#content {
+  background-color: #2d3436;
+  color: #fff;
+  padding: 16px;
+}
+
+#content .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#content .box1 {
+  background-color: #6c5ce7;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+#content .box1 h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#content .box1 h2 span {
+  font-size: 1.5rem;
+}
+
+#content .box1 .line1 {
+  display: flex;
+}
+
+#content .box1 .line1 img {
+  max-width: 200px;
+}
+
+#content .box2 {
+  margin-top: 16px;
+}
