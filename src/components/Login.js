@@ -1,6 +1,6 @@
 import React from 'react'
-import signin from '../images_videos/signin.svg'
-import signup from '../images_videos/signup.svg'
+import signin from '../assets/signin.svg'
+import signup from '../assets/signup.svg'
 const Login = () => {
   const onclick_sign_in_btn = () => {
     const container = document.querySelector(".container");

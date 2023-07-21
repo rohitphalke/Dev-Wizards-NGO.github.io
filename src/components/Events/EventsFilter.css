@@ -1,23 +1,18 @@
-.EventsFilter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 16px;
-  }
-  
-  .EventsFilter label {
-    margin-right: 8px;
-  }
-  
-  .EventsFilter select {
-    background-color: #6c5ce7;
-    color: #fff;
-    border: none;
-    border-radius: 12px;
-    padding: 8px 16px;
-  }
-  
-  .EventsFilter select:focus {
-    outline: none;
-  }
-  
+.events-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.filter-label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.filter-select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
