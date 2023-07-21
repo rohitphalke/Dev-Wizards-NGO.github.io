@@ -9,7 +9,7 @@ const EventDate = (props) => {
 
   return (
     <h4 className="EventDate">
-      <span>{month}  {day}  {year}</span>
+      <p>{month}  {day}  {year}</p>
     </h4>
   );
 };

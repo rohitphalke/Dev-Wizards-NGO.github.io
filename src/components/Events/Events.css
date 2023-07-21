@@ -1,37 +1,136 @@
-#content {
-  background-color: #2d3436;
-  color: #fff;
-  padding: 16px;
+/* Main wrapper styles */
+#events-content {
+  margin: 15px;
 }
 
-#content .wrapper {
-  max-width: 1200px;
+.events-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-#content .box1 {
-  background-color: #6c5ce7;
-  border-radius: 12px;
-  padding: 16px;
+/* About section styles */
+.events-box {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-#content .box1 h2 {
-  margin: 0;
-  font-size: 2rem;
+.events-column h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-#content .box1 h2 span {
-  font-size: 1.5rem;
+.events-column span {
+  font-size: 18px;
+  color: #007bff;
 }
 
-#content .box1 .line1 {
+.events-line {
   display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 
-#content .box1 .line1 img {
-  max-width: 200px;
+.events-left {
+  margin-right: 20px;
 }
 
-#content .box2 {
-  margin-top: 16px;
+.events-left img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+.events-padding-bottom1 {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.events-padding-bottom2 {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Events filter and list styles */
+.events-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.filter-label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.filter-select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.events-list {
+  margin-top: 20px;
+}
+
+.no-events {
+  color: #f00;
+  font-size: 20px;
+}
+
+/* Single event item styles */
+.event-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.event-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.event-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.event-description {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.event-details {
+  display: flex;
+  align-items: center;
+}
+
+.event-date {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.event-location {
+  background-color: #666;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
 }
