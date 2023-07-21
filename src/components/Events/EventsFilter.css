@@ -1,0 +1,23 @@
+.EventsFilter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .EventsFilter label {
+    margin-right: 8px;
+  }
+  
+  .EventsFilter select {
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 16px;
+  }
+  
+  .EventsFilter select:focus {
+    outline: none;
+  }
+  
