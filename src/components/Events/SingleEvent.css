@@ -1,0 +1,27 @@
+/* SingleEvent.css */
+
+.wrapper {
+    background-color: #000000; /* Black color for the wrapper */
+    color: #FFFFFF; /* White color for the text */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .wrapper li {
+    margin-bottom: 15px;
+  }
+  
+  .EventDate {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .pad_bot2 {
+    font-size: 20px;
+  }
+  
+  .pad_bot1 {
+    color: #FFFFFF; /* White color for the event description */
+  }
+  
