@@ -7,7 +7,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import Donate from './components/Donate'
-import Events_and_campaigns from './components/Events_and_campaigns'
+import Events_and_campaigns from './components/EventsAndCampaigns'
 import Footer from './components/Footer'
 import Profile from './components/Profile'
 import {
@@ -28,7 +28,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/donate" element={<Donate />} />
-            <Route path="/events_and_campaigns" element={<Events_and_campaigns />} />
+            <Route path="/events_and_campaigns" element={<EventsAndCampaigns />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/profile" element={<Profile />} />
           </Routes>
