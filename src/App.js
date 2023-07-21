@@ -9,7 +9,6 @@ import Contact from './components/Contact'
 import Donate from './components/Donate'
 import Events_and_campaigns from './components/Events_and_campaigns'
 import Footer from './components/Footer'
-import Events_and_campaigns from './components/Events_and_campaigns'
 import Profile from './components/Profile'
 import {
   BrowserRouter as Router,
