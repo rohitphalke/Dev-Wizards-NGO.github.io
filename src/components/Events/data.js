@@ -4,14 +4,14 @@ const dummyEvents = [
       events: [
         {
           evNo: 1,
-          date: new Date(2007, 5, 12),
+          date: new Date(2017, 5, 12),
           title: "Feeding Hearts, Nourishing Hope: Food Donation Campaign",
           description: `"Feeding Hearts, Nourishing Hope" - A food donation campaign providing nutritious meals and hope to those in need. Your support can create a world without hunger. Join us in spreading kindness and making a difference.`,
           location: "Mumbai",
         },
         {
           evNo: 2,
-          date: new Date(2007, 7, 15),
+          date: new Date(2017, 7, 15),
           title: "Harvest of Hope - Community Food Drive",
           description:
             "Community Food Drive to alleviate hunger and nourish those in need. Your support matters! Donate non-perishable items or contribute financially. Together, let's ensure no one in our community goes hungry. Cultivate hope with acts of kindness. ",
@@ -19,7 +19,7 @@ const dummyEvents = [
         },
         {
           evNo: 3,
-          date: new Date(2007, 9, 21),
+          date: new Date(2017, 9, 21),
           title: "Feast for All - Thanksgiving Food Donation Campaign",
           description:
             "Thanksgiving Food Donation Campaign. Share the spirit of Thanksgiving by ensuring everyone in our community enjoys a nourishing meal. Your donations create a warm and inclusive celebration, spreading love to those facing food insecurity. Join us in making a meaningful impact this holiday season. ",
