@@ -26,11 +26,11 @@ const Profile = (props) => {
     <div className="pro_body">
       <div className="profile_body">
         <div className='back_photo'>
-          <img src={back_photo} alt="background photo" className='bg_photo'/>
+          <img src={back_photo} alt="background_photo" className='bg_photo'/>
           </div>
         <div className="pro_fir_div">
           
-            <img src={user_photo} alt="user photo" className='user_photo'/>
+            <img src={user_photo} alt="user_photo" className='user_photo'/>
           
           <div className="userdata">
             <p><span>Name : </span>{props.name}</p>
