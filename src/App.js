@@ -7,7 +7,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import Donate from './components/Donate'
-import Events_and_campaigns from './components/EventsAndCampaigns'
+import EventsAndCampaigns from './components/EventsAndCampaigns'
 import Footer from './components/Footer'
 import Profile from './components/Profile'
 import {
