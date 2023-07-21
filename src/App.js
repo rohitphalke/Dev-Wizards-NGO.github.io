@@ -19,7 +19,7 @@ import {
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter>
           <Navbar/>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -33,7 +33,7 @@ function App() {
             <Route path="/profile" element={<Profile name='Rohit' username='rohit1' email='rohit@gmail.com'/>} />
           </Routes>
           <Footer/>
-      </Router>
+      </HashRouter>
     </>
   );
 }
