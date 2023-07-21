@@ -12,7 +12,6 @@ import Profile from './components/Profile'
 import Events from './components/Events/Events'
 import {
   BrowserRouter as Router,
-  HashRouter,
   Routes,
   Route
 } from "react-router-dom";
@@ -20,7 +19,7 @@ import {
 function App() {
   return (
     <>
-      <HashRouter>
+      <Router>
           <Navbar/>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -34,7 +33,7 @@ function App() {
             <Route path="/profile" element={<Profile name='Rohit' username='rohit1' email='rohit@gmail.com'/>} />
           </Routes>
           <Footer/>
-      </HashRouter>
+      </Router>
     </>
   );
 }
