@@ -12,6 +12,7 @@ import Profile from './components/Profile'
 import Events from './components/Events/Events'
 import {
   BrowserRouter as Router,
+  HashRouter,
   Routes,
   Route
 } from "react-router-dom";
