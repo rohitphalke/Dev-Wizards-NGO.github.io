@@ -1,27 +1,59 @@
-/* SingleEvent.css */
+.event-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
 
-.wrapper {
-    background-color: #000000; /* Black color for the wrapper */
-    color: #FFFFFF; /* White color for the text */
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-  }
-  
-  .wrapper li {
-    margin-bottom: 15px;
-  }
-  
-  .EventDate {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .pad_bot2 {
-    font-size: 20px;
-  }
-  
-  .pad_bot1 {
-    color: #FFFFFF; /* White color for the event description */
-  }
-  
+.event-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.event-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.event-description {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.event-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles for EventDate component */
+.EventDate {
+  margin-bottom: 10px;
+}
+
+.EventDate span {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Styles for event-location component */
+.event-location {
+  background-color: #666;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Styles for parallel placement */
+.event-details-container {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,35 +1,26 @@
 import React from "react";
-
 import EventDate from "./EventDate";
 import "./SingleEvent.css";
-// import Card from "../UI/Card";
 
 const SingleEvent = (props) => {
   if (props.singleYear.length === 0) {
-    return <h2 className="">Found no events.</h2>;
+    return <h2 className="no-events">Found no events.</h2>;
   }
 
   return (
-<div className="wrapper tab-content" id={props.id}>
-  <section className="col1">
-    <ul className="list-1">
+    <div className="event-wrapper">
       {props.singleYear.map((event) => (
-        <li key={event.evNo}>
-          <EventDate date={event.date} />
-          <p className="pad_bot2">
-            <strong>{event.title}</strong>
-          </p>
-          <p className="pad_bot1">{event.description}</p>
-        </li>
+        <div className="event-item" key={event.evNo}>
+          <p className="event-title">{event.title}</p>
+          <p className="event-description">{event.description}</p>
+          <div className="event-details-container">
+            <EventDate date={event.date} />
+            <p className="event-location">{event.location}</p>
+          </div>
+        </div>
       ))}
-      </ul>
-  </section>
-</div>
+    </div>
   );
 };
 
 export default SingleEvent;
-
-
-
-
