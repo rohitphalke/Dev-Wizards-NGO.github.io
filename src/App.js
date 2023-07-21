@@ -30,7 +30,7 @@ function App() {
             <Route path="/donate" element={<Donate />} />
             <Route path="/events" element={<Events />} />
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/profile" element={<Profile name='Rohit' username='rohit1' email='rohit@gmail.com'/>} />
           </Routes>
           <Footer/>
       </Router>
