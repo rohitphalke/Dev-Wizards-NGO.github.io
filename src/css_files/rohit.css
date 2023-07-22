@@ -43,7 +43,7 @@
     justify-content: space-around;
     z-index: 5;
 }
-form {
+.sign-in-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,12 +52,21 @@ form {
     min-width: 238px;
     padding: 0 10px;
 }
-form.sign-in-form {
+.sign-up-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    min-width: 238px;
+    padding: 0 10px;
+}
+.sign-in-form {
     opacity: 1;
     transition: 0.5s ease-in-out;
     transition-delay: 1s;
 }
-form.sign-up-form {
+.sign-up-form {
     opacity: 0;
     transition: 0.5s ease-in-out;
     transition-delay: 1s;
@@ -199,10 +208,10 @@ a {
 .container.sign-up-mode .left-panel .content {
     transform: translateX(0);
 }
-.container.sign-up-mode form.sign-in-form {
+.container.sign-up-mode .sign-in-form {
     opacity: 0;
 }
-.container.sign-up-mode form.sign-up-form {
+.container.sign-up-mode .sign-up-form {
     opacity: 1;
 }
 .container.sign-up-mode .right-panel {
@@ -222,17 +231,20 @@ a {
     .container::before {
         display: none;
     }
-    form {
+    .sign-in-form {
         width: 80%;
     }
-    form.sign-up-form {
+    .sign-up-form {
+        width: 80%;
+    }
+    .sign-up-form {
         display: none;
     }
-    .container.sign-up-mode2 form.sign-up-form {
+    .container.sign-up-mode2 .sign-up-form {
         display: flex;
         opacity: 1;
     }
-    .container.sign-up-mode2 form.sign-in-form {
+    .container.sign-up-mode2 .sign-in-form {
         display: none;
     }
     .panels-container {
@@ -244,7 +256,10 @@ a {
     }
 }
 @media (max-width:320px) {
-    form {
+    .sign-in-form {
+        width: 90%;
+    }
+    .sign-up-form {
         width: 90%;
     }
 }
@@ -312,7 +327,7 @@ a {
 
 .past_donations{
     display: flex;
-    align-items:start;
+    align-items:flex-start;
     justify-content: space-evenly;
     width: 50rem;
     margin: auto;
