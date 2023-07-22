@@ -3,9 +3,9 @@
 }
 
 .EventDate p {
-  background-color: #007bff;
-  color: #fff;
-  padding: 4px 8px;
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  color: black;
+  padding: 20px 8px;
   border-radius: 4px;
   font-size: 14px;
   font-weight: bold;
