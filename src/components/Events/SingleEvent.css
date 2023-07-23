@@ -1,4 +1,6 @@
-.event-wrapper {
+/* Jay Styling */
+
+/* .event-wrapper {
   display: inline-flex;
   flex-direction: column;
   margin-top: 20px;
@@ -57,7 +59,7 @@
 }
 
 /* Styles for EventDate component */
-.EventDate {
+/* .EventDate {
   margin-top: 1rem;
   margin-bottom: 10px;
   display: flex;
@@ -72,9 +74,10 @@
 
   font-size: 14px;
   font-weight: bold;
-}
+} */
 
 /* Styles for event-location component */
+/*
 .event-location {
   background-image: linear-gradient(
     to top,
@@ -93,8 +96,16 @@
 }
 
 /* Styles for parallel placement */
+/*
 .event-details-container {
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
+} */
+
+
+/* My Styling */
+
+.card-image {
+  height: 2rem;
 }

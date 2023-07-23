@@ -1,19 +1,28 @@
 .events-filter {
+  color: black;
+  padding: 0 1rem;
+}
+
+.events-filter__control {
   display: flex;
-  flex-direction: column;
+  width: 100%;
   align-items: center;
-  margin: 20px 0;
+  justify-content: space-between;
+  margin: 1rem 0;
 }
 
-.filter-label {
-  font-size: 16px;
-  border-radius: none;
+.events-filter label {
+  font-weight: bold;
+  /* margin-bottom: 0.5rem; */
+  margin-left: 32rem;
+  color: orange;
 }
 
-.filter-select {
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  outline: 0;
-  font-family: sans-serif;
+.events-filter select {
+  font: inherit;
+  padding: 0.5rem 3rem;
+  font-weight: bold;
+  border-radius: 6px;
+  /* margin-left: 1rem; */
+  margin-right: 32rem;
 }
