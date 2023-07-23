@@ -1,6 +1,5 @@
 import React from "react";
 import "./EventsFilter.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const EventsFilter = (props) => {
   const dropdownChangeHandler = (event) => {
