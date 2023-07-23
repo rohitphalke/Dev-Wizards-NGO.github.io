@@ -1,7 +1,6 @@
 import React from "react";
 import EventDate from "./EventDate";
 import "./SingleEvent.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const SingleEvent = (props) => {
   if (props.singleYear.length === 0) {

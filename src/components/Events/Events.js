@@ -4,7 +4,6 @@ import EventsFilter from "./EventsFilter";
 import FoodCampaign from "../../assets/events.jpg";
 import "./Events.css";
 import data from "./data";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function Events() {
   const [filteredYear, setFilteredYear] = useState("2023");
