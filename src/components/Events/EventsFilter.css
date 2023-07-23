@@ -7,12 +7,13 @@
 
 .filter-label {
   font-size: 16px;
-  margin-bottom: 8px;
+  border-radius: none;
 }
 
 .filter-select {
   padding: 8px;
   font-size: 14px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  outline: 0;
+  font-family: sans-serif;
 }

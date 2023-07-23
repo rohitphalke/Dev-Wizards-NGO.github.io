@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import EventsList from "./EventsList";
 import EventsFilter from "./EventsFilter";
-import lilgirl from "../../assets/events.jpg";
+import FoodCampaign from "../../assets/events.jpg";
 import "./Events.css";
 import data from "./data";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Events() {
   const [filteredYear, setFilteredYear] = useState("2023");
@@ -18,16 +19,17 @@ function Events() {
 
   return (
     <article id="events-content" className="events-tabs">
-      <div className="events-wrapper">
-        <div className="events-box">
-          <div className="events-wrapper">
+      <div className="events-wrapper container-fluid">
+        <div className="events-box row col-md-12 col-lg-10">
+          <div className="events-wrapper ">
             <section className="events-column">
               <h2>
-                <strong>P</strong>ress<span>About Us</span>
+                <span>About Us</span>
               </h2>
+
               <div className="events-line">
                 <figure className="events-left events-margin-right">
-                  <img src={lilgirl} alt="Little girl" />
+                  <img src={FoodCampaign} alt="food campaigners" />
                 </figure>
                 <p className="events-padding-bottom1">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -52,10 +54,31 @@ function Events() {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-        <EventsList eventItems={filteredEvents} />
+        <div className="container-fluid reveal">
+          <div className="row reveal">
+            <EventsList eventItems={filteredEvents} />
+          </div>
+        </div>
       </div>
     </article>
   );
 }
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
 
 export default Events;
