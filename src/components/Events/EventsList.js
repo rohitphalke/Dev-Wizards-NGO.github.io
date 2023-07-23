@@ -8,7 +8,7 @@ const EventsList = (props) => {
   }
 
   return (
-    <div className="events-list">
+    <div className="events-list d-flex flex-row mx-5">
       {props.eventItems.map((event) => (
         <SingleEvent key={event.id} singleYear={event.events} />
       ))}

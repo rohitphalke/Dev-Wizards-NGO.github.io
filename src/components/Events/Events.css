@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
 
 /* Main wrapper styles */
-#events-content {
+/* #events-content {
   margin: 15px;
 }
 
@@ -13,7 +13,6 @@
   margin: 0 auto;
 }
 
-/* About section styles */
 .events-box {
   justify-content: space-around;
   width: fit-content;
@@ -61,7 +60,6 @@
 
 .events-line {
   display: flex;
-  /* align-items: baseline; */
   justify-content: space-evenly;
   margin-top: 20px;
 }
@@ -93,10 +91,10 @@
   color: lightgrey;
   text-align: left;
   font-family: "Lato", sans-serif;
-}
+} */
 
 /* Events filter and list styles */
-.events-filter {
+/* .events-filter {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,10 +120,10 @@
 .no-events {
   color: #f00;
   font-size: 20px;
-}
+} */
 
 /* Single event item styles */
-.event-wrapper {
+/* .event-wrapper {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -162,7 +160,7 @@
   font-size: 14px;
   font-weight: bold;
   margin-right: 8px;
-}
+} */
 
 /* .event-location {
   background-color: #666;
@@ -173,7 +171,7 @@
   font-weight: bold;
 } */
 
-.reveal {
+/* .reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
@@ -183,4 +181,4 @@
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
-}
+} */

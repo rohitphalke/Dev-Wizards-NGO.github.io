@@ -5,6 +5,7 @@ import FoodCampaign from "../../assets/events.jpg";
 import "./Events.css";
 import data from "./data";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Carousel from "react-bootstrap/Carousel";
 
 function Events() {
   const [filteredYear, setFilteredYear] = useState("2023");
@@ -19,42 +20,53 @@ function Events() {
 
   return (
     <article id="events-content" className="events-tabs">
-      <div className="events-wrapper container-fluid">
-        <div className="events-box row col-md-12 col-lg-10">
-          <div className="events-wrapper ">
-            <section className="events-column">
-              <h2>
-                <span>About Us</span>
-              </h2>
-
-              <div className="events-line">
-                <figure className="events-left events-margin-right">
-                  <img src={FoodCampaign} alt="food campaigners" />
-                </figure>
-                <p className="events-padding-bottom1">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo.
-                </p>
-                <p className="events-padding-bottom2">
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit, sed quia consequuntur magni dolores eos qui
-                  ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-                  qui dolorem ipsum quia dolor sit amet, consectetur.
-                </p>
-              </div>
-            </section>
-          </div>
-        </div>
+      <div style={{ maxWidth: '80%', margin: '0 auto', border: '1px solid black',height:'30%' }}>
+        <Carousel>
+          <Carousel.Item interval={1000}>
+            <img
+              src="https://images.unsplash.com/photo-1509099927777-1b8a87bc3b21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFmcmljYW4lMjBjaGlsZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
+              className="d-block w-100"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={500}>
+            <img
+              src="https://images.unsplash.com/photo-1582307811683-75b18a39ab71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWZyaWNhbiUyMGNoaWxkfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
+              className="d-block w-100"
+              alt="Second slide"
+            />
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src="https://images.unsplash.com/flagged/photo-1555251255-e9a095d6eb9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWZyaWNhbiUyMGNoaWxkfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
+              className="d-block w-100"
+              alt="Third slide"
+            />
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </div>
+
 
       <div className="events-wrapper">
         <EventsFilter
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-        <div className="container-fluid reveal">
+        <div className="container-fluid reveal d-flex flex-wrap">
           <div className="row reveal">
             <EventsList eventItems={filteredEvents} />
           </div>
