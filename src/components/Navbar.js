@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav
       className={"navbar navbar-expand-lg navbar-light bg-light"}
     >
-      <Link className="navbar-brand">NGO</Link>
+      <Link className="navbar-brand" to='/'>NGO</Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -21,37 +21,37 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active mx-3">
-            <Link className="nav-a" href="/">
+            <Link className="nav-a" to='/'>
               Home
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link className="nav-a" href="/about">
+            <Link className="nav-a" to="/about">
               About
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link className="nav-a" href="/contact">
+            <Link className="nav-a" to="/contact">
               Contact Us
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link className="nav-a" href="/donate">
+            <Link className="nav-a" to="/donate">
               Donate
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link className="nav-a" href="/events">
+            <Link className="nav-a" to="/events">
               Events
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link className="nav-a" href="/gallery">
+            <Link className="nav-a" to="/gallery">
               Gallery
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link className="nav-a" href="/profile">
+            <Link className="nav-a" to="/profile">
               Profile
             </Link>
           </li>
