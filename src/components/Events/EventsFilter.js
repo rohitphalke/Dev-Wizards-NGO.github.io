@@ -7,12 +7,17 @@ const EventsFilter = (props) => {
   };
 
   return (
-    <div className="events-filter">
-      <label className="filter-label">Filter by year</label>
+    <div className="events-filter ">
+      <label
+        className="filter-label dropdown-menu position-static d-grid gap-1 p-2 rounded-3 mx-0 border-0 shadow w-220px"
+        data-bs-theme="dark"
+      >
+        Filter by year
+      </label>
       <select
         value={props.selected}
         onChange={dropdownChangeHandler}
-        className="filter-select"
+        className="filter-select dropdown-item rounded-2 active"
       >
         <option value="2017">2017</option>
         <option value="2018">2018</option>

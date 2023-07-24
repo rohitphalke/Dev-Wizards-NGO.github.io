@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav
       className={"navbar navbar-expand-lg navbar-light bg-light"}
     >
-      <a href='/' className="navbar-brand">NGO</a>
+      <Link className="navbar-brand" to='/'>NGO</Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -20,39 +21,39 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active mx-3">
-            <a className="nav-a" href="/">
+            <Link className="nav-a" to='/'>
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item mx-3">
-            <a className="nav-a" href="/about">
+            <Link className="nav-a" to="/about">
               About
-            </a>
+            </Link>
           </li>
           <li className="nav-item mx-3">
-            <a className="nav-a" href="/contact">
+            <Link className="nav-a" to="/contact">
               Contact Us
-            </a>
+            </Link>
           </li>
           <li className="nav-item mx-3">
-            <a className="nav-a" href="/donate">
+            <Link className="nav-a" to="/donate">
               Donate
-            </a>
+            </Link>
           </li>
           <li className="nav-item mx-3">
-            <a className="nav-a" href="/events">
+            <Link className="nav-a" to="/events">
               Events
-            </a>
+            </Link>
           </li>
           <li className="nav-item mx-3">
-            <a className="nav-a" href="/gallery">
+            <Link className="nav-a" to="/gallery">
               Gallery
-            </a>
+            </Link>
           </li>
           <li className="nav-item mx-3">
-            <a className="nav-a" href="/profile">
+            <Link className="nav-a" to="/profile">
               Profile
-            </a>
+            </Link>
           </li>
         </ul>
         {/* <form className="form-inline my-2 my-lg-0">

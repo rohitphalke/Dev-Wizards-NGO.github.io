@@ -8,14 +8,17 @@ const SingleEvent = (props) => {
   }
 
   return (
-    <div className="event-wrapper">
+    <div className="event-wrapper  col-md-12 col-lg-8 offset-lg-2">
       {props.singleYear.map((event) => (
-        <div className="event-item" key={event.evNo}>
-          <p className="event-title">{event.title}</p>
+        <div
+          className="event-item causes causes-2 text-center ftco-animate fadeInUp ftco-animated"
+          key={event.evNo}
+        >
+          <p className="event-title goal mb-4">{event.title}</p>
           <p className="event-description">{event.description}</p>
           <div className="event-details-container">
             <EventDate date={event.date} />
-            <p className="event-location">{event.location}</p>
+            <p className="event-location ">{event.location}</p>
           </div>
         </div>
       ))}
