@@ -1,7 +1,7 @@
 import React from 'react'
 import signin from '../assets/signin.svg'
 import signup from '../assets/signup.svg'
-const Login = () => {
+const Login = (props) => {
   const onclick_sign_in_btn = () => {
     const container = document.querySelector(".container");
     container.classList.remove("sign-up-mode");
@@ -21,6 +21,7 @@ const Login = () => {
   const sign_in = () => {
     let username = document.getElementById('sign_in_name').target.value
     let password = document.getElementById('sign_in_passowrd').target.value
+
   }
   const sign_up = () => {
 
