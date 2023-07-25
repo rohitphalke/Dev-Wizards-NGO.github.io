@@ -4,19 +4,19 @@ import signup from '../assets/signup.svg'
 import { useNavigate } from 'react-router-dom';
 const Login = (props) => {
   const onclick_sign_in_btn = () => {
-    const container = document.querySelector(".container");
+    const container = document.querySelector(".container123");
     container.classList.remove("sign-up-mode");
   }
   const onclick_sign_in_btn2 = () => {
-    const container = document.querySelector(".container");
+    const container = document.querySelector(".container123");
     container.classList.remove("sign-up-mode2");
   }
   const onclick_sign_up_btn = () => {
-    const container = document.querySelector(".container");
+    const container = document.querySelector(".container123");
     container.classList.add("sign-up-mode");
   }
   const onclick_sign_up_btn2 = () => {
-    const container = document.querySelector(".container");
+    const container = document.querySelector(".container123");
     container.classList.add("sign-up-mode2");
   }
 
@@ -72,10 +72,10 @@ const onchange_sign_up = (event) => {
 
   return (
     <div className="login_body">
-        <div className="container">
+        <div className="container123">
         <div className="signin-signup">
             <form onSubmit={onsubmit1} className="sign-in-form">
-                <h2 className="title">Sign in</h2>
+                <h2 className="title123">Sign in</h2>
                 <div className="input-field">
                     <i className="fas fa-user"></i>
                     <input type="text" placeholder="Username" name='sign_in_username' defaultValue="" autoComplete='current-username'/>
@@ -84,7 +84,7 @@ const onchange_sign_up = (event) => {
                     <i className="fas fa-lock"></i>
                     <input type="password" placeholder="Password" name='sign_in_password' defaultValue="" autoComplete='current-password'/>
                 </div>
-                <button type="submit" value="Login" className="btn">Sign In</button>
+                <button type="submit" value="Login" className="btn123">Sign In</button>
                 <p className="social-text">Or Sign in with our NGO</p>
                 <div className="social-media">
                     <a href="/" className="social-icon">
@@ -103,7 +103,7 @@ const onchange_sign_up = (event) => {
                 <p className="account-text">Don't have an account? <a href="/" id="sign-up-btn2" onClick={onclick_sign_up_btn2}>Sign up</a></p>
             </form>
             <form onSubmit={onsubmit} className="sign-up-form">
-                <h2 className="title">Sign up</h2>
+                <h2 className="title123">Sign up</h2>
                 <div className="input-field">
                     <i className="fas fa-file-signature"></i>
                     <input type="text" placeholder="Name" id='sign_up_name' onChange={onchange_sign_up} name='name' autoComplete='current-name'/>
@@ -120,7 +120,7 @@ const onchange_sign_up = (event) => {
                     <i className="fas fa-lock"></i>
                     <input type="password" placeholder="Password" id='sign_up_password' onChange={onchange_sign_up} name='password' autoComplete='current-password'/>
                 </div>
-                <button type="submit" value="Sign up" className="btn" >Sign Up</button>
+                <button type="submit" value="Sign up" className="btn123" >Sign Up</button>
                 <p className="social-text">Or Sign in with social platform</p>
                 <div className="social-media">
                     <a href="/" className="social-icon">
@@ -141,18 +141,18 @@ const onchange_sign_up = (event) => {
         </div>
         <div className="panels-container">
             <div className="panel left-panel">
-                <div className="content">
+                <div className="content123">
                     <h3>Member of our NGO?</h3>
                     <p>By logging in, you become part of our mission to create positive change in the world. Together, we can make a lasting impact.</p>
-                    <button className="btn" id="sign-in-btn" onClick={onclick_sign_in_btn}>Sign in</button>
+                    <button className="btn123" id="sign-in-btn" onClick={onclick_sign_in_btn}>Sign in</button>
                 </div>
                 <img src={signin} alt="" className="image"/>
             </div>
             <div className="panel right-panel">
-                <div className="content">
+                <div className="content123">
                     <h3>New to our NGO?</h3>
                     <p>Sign up to be a part of our community and help create a better world.</p>
-                    <button className="btn" id="sign-up-btn" onClick={onclick_sign_up_btn}>Sign up</button>
+                    <button className="btn123" id="sign-up-btn" onClick={onclick_sign_up_btn}>Sign up</button>
                 </div>
             <img src={signup} alt="" className="image"/>
             </div>
