@@ -1,0 +1,140 @@
+.maheshgallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.sliderimg {
+  width: "300px";
+  height: "500px";
+  margin: "2rem 1em";
+  border-radius: "15px";
+  box-shadow: "0 0 10px 0 rgba(0, 0, 0, 0.5)";
+}
+.maheshstory {
+  /* border: 2px solid red; */
+  padding: 0 1em;
+}
+.maheshcontainer2 {
+  padding: 1em 2em;
+}
+
+/* .heading-text {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.heading-text span {
+  font-weight: 100;
+} */
+
+/* Responsive image gallery rules begin*/
+
+.maheshimage-gallery {
+  /* Mobile first */
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.maheshimage-gallery .column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.maheshimage-item img {
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .maheshimage-gallery {
+    flex-direction: row;
+    /* border: 2px solid red; */
+    /* width: 100%; */
+    gap: 20px;
+  }
+  .maheshgallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  .maheshcontainer2 {
+    padding: 2em 6em;
+  }
+  .maheshimage-gallery .column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+/* overlay styles */
+
+.maheshimage-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.maheshoverlay {
+  /* border: 2px solid red; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.425);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.3s 0.1s ease-in-out;
+  color: #fff;
+  /* center overlay content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  padding: 2em;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+/* hover */
+.maheshimage-item:hover .maheshoverlay {
+  transform: scale(1);
+}
+
+@media (min-width: 700px) {
+  .maheshoverlay {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1000px) {
+  .maheshoverlay {
+    font-size: 1.3rem;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .maheshgallery-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .maheshgallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .maheshgallery-container {
+    grid-template-columns: 1fr;
+  }
+}

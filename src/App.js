@@ -20,19 +20,19 @@ function App() {
   return (
     <>
       <Router>
-          <Navbar/>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/signup_login" element={<Login />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/donate" element={<Donate />} />
-            <Route path="/events_and_campaigns" element={<EventsAndCampaigns />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/profile" element={<Profile />} />
-          </Routes>
-          <Footer/>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/signup_login" element={<Login />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/events_and_campaigns" element={<EventsAndCampaigns />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+        <Footer />
       </Router>
     </>
   );
