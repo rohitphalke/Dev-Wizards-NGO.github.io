@@ -1,0 +1,52 @@
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.img1 {
+  width: 100%;
+  height: 10rem;
+}
+
+.div1 {
+  text-align: center;
+  margin: 50px;
+  color: rgb(8, 145, 38);
+}
+
+.div1 .head1 {
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.div1 p {
+  font-size: large;
+  font-weight: 400;
+}
+
+.div2 h5 {
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px;
+  margin-bottom: 50px;
+
+}
+
+.head2 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: rgb(8, 81, 129);
+}
+
+
+
+#account h4 {
+  line-height: 50px;
+  letter-spacing: 1px;
+  /* margin-top: 10px; */
+  margin-bottom: 70px;
+  color: rgb(8, 81, 129);
+}
+

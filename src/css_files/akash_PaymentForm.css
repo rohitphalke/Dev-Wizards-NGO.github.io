@@ -1,0 +1,58 @@
+
+.akashmybutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    /* background-color: rgb(165, 210, 249); */
+    
+}
+
+.tunui{
+    /* border: 2px solid green; */
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  height: 100%;
+    flex-direction: column;
+}
+.huhuhu{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  
+}
+.kik{
+    width: 97%;
+    /* border: 2px solid red; */
+    /* border: 2px solid black; */
+}
+@media (max-width: 768px) {
+    .akashmybutton {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .akashmybuttoninner {
+        width: 100%; /* Make buttons take full width of the container */
+        margin-bottom: 10px; /* Add some spacing between stacked buttons */
+    }
+}
+
+.imodalout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* width: 50%; */
+}
+
+.imodalout > div{
+    padding: 15px;
+}
+
+.greendonation{
+    color: green;
+    background-color: aquamarine;
+}
