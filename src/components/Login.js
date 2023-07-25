@@ -1,7 +1,7 @@
 import React from 'react'
 import signin from '../assets/signin.svg'
 import signup from '../assets/signup.svg'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const Login = (props) => {
   const onclick_sign_in_btn = () => {
     const container = document.querySelector(".container123");
@@ -26,6 +26,7 @@ const Login = (props) => {
     event.preventDefault()
     props.user_stat.setUserInfo(props.user_stat.userInfo)
     onclick_sign_in_btn()
+    onclick_sign_in_btn2()
   }
   const onsubmit1 = (event) => {
     event.preventDefault()
@@ -100,7 +101,7 @@ const onchange_sign_up = (event) => {
                         <i className="fab fa-linkedin-in"></i>
                     </a>
                 </div>
-                <p className="account-text">Don't have an account? <a href="/" id="sign-up-btn2" onClick={onclick_sign_up_btn2}>Sign up</a></p>
+                <p className="account-text">Don't have an account? <Link to="/signup_login" id="sign-up-btn2" onClick={onclick_sign_up_btn2}>Sign up</Link></p>
             </form>
             <form onSubmit={onsubmit} className="sign-up-form">
                 <h2 className="title123">Sign up</h2>
@@ -136,7 +137,7 @@ const onchange_sign_up = (event) => {
                         <i className="fab fa-linkedin-in"></i>
                     </a>
                 </div>
-                <p className="account-text">Already have an account? <a href="/signup_login" id="sign-in-btn2" onClick={onclick_sign_in_btn2}>Sign in</a></p>
+                <p className="account-text">Already have an account? <Link to="/signup_login" id="sign-in-btn2" onClick={onclick_sign_in_btn2}>Sign in</Link></p>
             </form>
         </div>
         <div className="panels-container">

@@ -209,7 +209,7 @@ a {
     transform: translateX(0);
 }
 .container123.sign-up-mode .sign-in-form {
-    opacity: 0;
+    opacity: 1;
 }
 .container123.sign-up-mode .sign-up-form {
     opacity: 1;
