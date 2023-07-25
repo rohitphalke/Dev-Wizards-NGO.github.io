@@ -38,7 +38,7 @@ const Profile = (props) => {
             <p><span>E-mail : </span>{props.user_info.email}</p>
           </div>
         </div>
-        <div>
+        <div className='past_dona'>
           <p className='past_don'>Past donations</p>
             {data1}
         </div>
