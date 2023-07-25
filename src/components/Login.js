@@ -78,11 +78,11 @@ const onchange_sign_up = (event) => {
                 <h2 className="title123">Sign in</h2>
                 <div className="input-field">
                     <i className="fas fa-user"></i>
-                    <input type="text" placeholder="Username" name='sign_in_username' defaultValue="" autoComplete='current-username'/>
+                    <input type="text" placeholder="Username" name='sign_in_username' defaultValue="" autoComplete='current-username' required/>
                 </div>
                 <div className="input-field">
                     <i className="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" name='sign_in_password' defaultValue="" autoComplete='current-password'/>
+                    <input type="password" placeholder="Password" name='sign_in_password' defaultValue="" autoComplete='current-password' required/>
                 </div>
                 <button type="submit" value="Login" className="btn123">Sign In</button>
                 <p className="social-text">Or Sign in with our NGO</p>
@@ -106,19 +106,19 @@ const onchange_sign_up = (event) => {
                 <h2 className="title123">Sign up</h2>
                 <div className="input-field">
                     <i className="fas fa-file-signature"></i>
-                    <input type="text" placeholder="Name" id='sign_up_name' onChange={onchange_sign_up} name='name' autoComplete='current-name'/>
+                    <input type="text" placeholder="Name" id='sign_up_name' onChange={onchange_sign_up} name='name' autoComplete='current-name' required/>
                 </div>
                 <div className="input-field">
                     <i className="fas fa-user"></i>
-                    <input type="text" placeholder="Username" id='sign_up_username' onChange={onchange_sign_up} name='username' autoComplete='current-username'/>
+                    <input type="text" placeholder="Username" id='sign_up_username' onChange={onchange_sign_up} name='username' autoComplete='current-username' required/>
                 </div>
                 <div className="input-field">
                     <i className="fas fa-envelope"></i>
-                    <input type="email" placeholder="Email" id='sign_up_email' onChange={onchange_sign_up} name='email' autoComplete='current-email'/>
+                    <input type="email" placeholder="Email" id='sign_up_email' onChange={onchange_sign_up} name='email' autoComplete='current-email' required/>
                 </div>
                 <div className="input-field">
                     <i className="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" id='sign_up_password' onChange={onchange_sign_up} name='password' autoComplete='current-password'/>
+                    <input type="password" placeholder="Password" id='sign_up_password' onChange={onchange_sign_up} name='password' autoComplete='current-password' required/>
                 </div>
                 <button type="submit" value="Sign up" className="btn123" >Sign Up</button>
                 <p className="social-text">Or Sign in with social platform</p>
