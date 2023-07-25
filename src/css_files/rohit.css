@@ -380,3 +380,12 @@ a {
     display: flex;
     justify-content: space-between;
 }
+
+@media (min-width: 768px) {
+    
+  }
+  
+  /* Media query for desktops (1024px and above) */
+  @media (min-width: 1024px) {
+    
+  }

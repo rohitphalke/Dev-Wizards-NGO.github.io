@@ -1,6 +1,12 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-const Navbar = () => {
+import { Link, useNavigate } from "react-router-dom";
+const Navbar = (props) => {
+  const navigate = useNavigate()
+  const logout = (event) => {
+    event.preventDefault();
+    props.stat.setLoginStatus("Login/Sign Up")
+    navigate('/')
+  }
   return (
     <nav
       className={"navbar navbar-expand-lg navbar-light bg-light"}
@@ -51,10 +57,19 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link className="nav-a" to="/profile">
-              Profile
+            <Link className="nav-a" to={props.stat.loginStatus==="Profile" ? "/profile" : "/signup_login"}>
+              {props.stat.loginStatus}
             </Link>
           </li>
+          {props.stat.loginStatus==="Profile" ? 
+            <li className="nav-item mx-3">
+            <Link style={{pointer:'cursor'}} className="nav-a" onClick={logout} >
+              Log Out
+            </Link>
+          </li>
+            :
+            <li style={{display: 'none'}}></li>
+          }
         </ul>
         {/* <form className="form-inline my-2 my-lg-0">
           <input

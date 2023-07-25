@@ -33,9 +33,9 @@ const Profile = (props) => {
             <img src={user_photo} alt="user_photo" className='user_photo'/>
           
           <div className="userdata">
-            <p><span>Name : </span>{props.name}</p>
-            <p><span>Username : </span>{props.username}</p>
-            <p><span>E-mail : </span>{props.email}</p>
+            <p><span>Name : </span>{props.user_info.name}</p>
+            <p><span>Username : </span>{props.user_info.username}</p>
+            <p><span>E-mail : </span>{props.user_info.email}</p>
           </div>
         </div>
         <div>
