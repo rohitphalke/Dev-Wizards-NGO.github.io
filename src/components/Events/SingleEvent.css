@@ -1,0 +1,100 @@
+.event-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.event-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.event-title {
+  text-align: center !important;
+  line-height: 1.5;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: transparent;
+  transition: 0.3s all ease;
+  color: #000000;
+}
+.event-description {
+  font-size: 16px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 500;
+  color: gray;
+  text-align: justify !important;
+  line-height: 2;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 4rem;
+  background-color: #dcd9d4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  background-blend-mode: soft-light, screen;
+}
+
+.event-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles for EventDate component */
+.EventDate {
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  display: flex;
+
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.EventDate span {
+  background-color: #007bff;
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Styles for event-location component */
+.event-location {
+  background-image: linear-gradient(
+    to top,
+    #0c3483 0%,
+    #a2b6df 100%,
+    #6b8cce 100%,
+    #a2b6df 100%
+  );
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  height: fit-content;
+  margin-top: rem;
+  font-weight: bold;
+}
+
+/* Styles for parallel placement */
+.event-details-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}

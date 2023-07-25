@@ -1,0 +1,8 @@
+.events-list {
+  margin-top: 20px;
+}
+
+.no-events {
+  color: #f00;
+  font-size: 20px;
+}

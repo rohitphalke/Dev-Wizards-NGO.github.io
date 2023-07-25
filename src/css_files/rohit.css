@@ -11,7 +11,7 @@
     min-height: 100vh;
     /* background: #444; */
 }
-.container {
+.container123 {
     position: relative;
     width: 70vw;
     height: 80vh;
@@ -20,7 +20,7 @@
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
-.container::before {
+.container123::before {
     content: "";
     position: absolute;
     top: 0;
@@ -43,7 +43,7 @@
     justify-content: space-around;
     z-index: 5;
 }
-form {
+.sign-in-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,17 +52,26 @@ form {
     min-width: 238px;
     padding: 0 10px;
 }
-form.sign-in-form {
+.sign-up-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    min-width: 238px;
+    padding: 0 10px;
+}
+.sign-in-form {
     opacity: 1;
     transition: 0.5s ease-in-out;
     transition-delay: 1s;
 }
-form.sign-up-form {
+.sign-up-form {
     opacity: 0;
     transition: 0.5s ease-in-out;
     transition-delay: 1s;
 }
-.title {
+.title123 {
     font-size: 35px;
     color: #df4adf;
     margin-bottom: 10px;
@@ -93,7 +102,7 @@ form.sign-up-form {
     font-weight: 600;
     color: #444;
 }
-.btn {
+.btn123 {
     width: 150px;
     height: 50px;
     border: none;
@@ -105,7 +114,7 @@ form.sign-up-form {
     text-transform: uppercase;
     cursor: pointer;
 }
-.btn:hover {
+.btn123:hover {
     background: #c03cc0;
 }
 .social-text {
@@ -158,7 +167,7 @@ a {
 .left-panel {
     pointer-events: none;
 }
-.content {
+.content123 {
     color: #fff;
     transition: 1.1s ease-in-out;
     transition-delay: 0.5s;
@@ -177,62 +186,65 @@ a {
     transition-delay: 0.4s;
 }
 .left-panel .image,
-.left-panel .content {
+.left-panel .content123 {
     transform: translateX(-200%);
 }
 .right-panel .image,
-.right-panel .content {
+.right-panel .content123 {
     transform: translateX(0);
 }
 .account-text {
     display: none;
 }
 /*Animation*/
-.container.sign-up-mode::before {
+.container123.sign-up-mode::before {
     transform: translateX(0);
 }
-.container.sign-up-mode .right-panel .image,
-.container.sign-up-mode .right-panel .content {
+.container123.sign-up-mode .right-panel .image,
+.container123.sign-up-mode .right-panel .content123 {
     transform: translateX(200%);
 }
-.container.sign-up-mode .left-panel .image,
-.container.sign-up-mode .left-panel .content {
+.container123.sign-up-mode .left-panel .image,
+.container123.sign-up-mode .left-panel .content123 {
     transform: translateX(0);
 }
-.container.sign-up-mode form.sign-in-form {
-    opacity: 0;
-}
-.container.sign-up-mode form.sign-up-form {
+.container123.sign-up-mode .sign-in-form {
     opacity: 1;
 }
-.container.sign-up-mode .right-panel {
+.container123.sign-up-mode .sign-up-form {
+    opacity: 1;
+}
+.container123.sign-up-mode .right-panel {
     pointer-events: none;
 }
-.container.sign-up-mode .left-panel {
+.container123.sign-up-mode .left-panel {
     pointer-events: all;
 }
 /*Responsive*/
 @media (max-width:779px) {
-    .container {
+    .container123 {
         width: 100vw;
         height: 100vh;
     }
 }
 @media (max-width:635px) {
-    .container::before {
+    .container123::before {
         display: none;
     }
-    form {
+    .sign-in-form {
         width: 80%;
     }
-    form.sign-up-form {
+    .sign-up-form {
+        width: 80%;
+    }
+    .sign-up-form {
         display: none;
     }
-    .container.sign-up-mode2 form.sign-up-form {
+    .container123.sign-up-mode2 .sign-up-form {
         display: flex;
         opacity: 1;
     }
-    .container.sign-up-mode2 form.sign-in-form {
+    .container123.sign-up-mode2 .sign-in-form {
         display: none;
     }
     .panels-container {
@@ -244,7 +256,136 @@ a {
     }
 }
 @media (max-width:320px) {
-    form {
+    .sign-in-form {
+        width: 90%;
+    }
+    .sign-up-form {
         width: 90%;
     }
 }
+
+.pro_body{
+    background-color: #f3f2ef;
+}
+
+.profile_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60rem;
+    margin: auto;
+    background-color: white;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.pro_fir_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 10rem;
+}
+
+.back_photo{
+    height: 15rem;
+    width: 60rem;
+    overflow: hidden;
+}
+
+.bg_photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user_photo{
+    border-radius: 50%;
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    top: -7rem;
+    transform: translate(-70%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+.userdata p span{
+    font-weight:bold;
+    font-family: 'Cinzel', serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,200&display=swap');
+.userdata p{
+    font-size: 1.5em;
+    padding: 0.3em;
+    font-family: 'Spectral', serif;
+}
+
+.userdata{
+    height: 7rem;
+}
+
+.past_donations{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    width: 50rem;
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1.5rem 1.5rem;
+    margin-top: 25px;
+    border-radius: 50px;
+    box-shadow: 3px 5px 5px #3b5dc499;
+    flex-direction: column;
+    border: 2px solid #22476752;
+}
+
+.eve_heading{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.eve_desc{
+    font-size: 15px;
+    font-family: cursive;
+    color: rgb(85, 84, 84);
+}
+
+.past_donations p, .past_donations span{
+    margin: 1rem;
+}
+
+
+.past_do :hover{
+    box-shadow: 3px 5px 11px #354dc699;
+    /* box-shadow: 15px 10px 30px #c99f8552; */
+    border: 3px solid #100b7452;
+    transition: transform 100ms, box-shadow 100ms;
+    transform: scale(1.02);
+}
+
+.past_do .content-wrapper {
+    pointer-events: none;
+  }
+
+.past_don{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    
+  }
+  
+  /* Media query for desktops (1024px and above) */
+  @media (min-width: 1024px) {
+    
+  }

@@ -7,32 +7,39 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import Donate from './components/Donate'
-import EventsAndCampaigns from './components/EventsAndCampaigns'
 import Footer from './components/Footer'
 import Profile from './components/Profile'
+import Events from './components/Events/Events'
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
+import { useState } from 'react';
 
 function App() {
+  const [loginStatus, setLoginStatus] = useState("Login/Sign Up")
+  const [userInfo, setUserInfo] = useState({name:"", username: "", email: "", password: ""})
   return (
     <>
       <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/signup_login" element={<Login />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/donate" element={<Donate />} />
-          <Route path="/events_and_campaigns" element={<EventsAndCampaigns />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/profile" element={<Profile />} />
-        </Routes>
-        <Footer />
+          <Navbar stat={{loginStatus, setLoginStatus}}/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/signup_login" element={<Login user_stat={{userInfo, setUserInfo, setLoginStatus}}/>} />
+            {/* <Route path="/signup_login" component={Login} user_stat={{userInfo, setUserInfo, setLoginStatus}}/> */}
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/donate" element={<Donate />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/gallery" element={<Gallery />} />
+            {
+              userInfo.name !== "" ? <Route path="/profile" element={<Profile user_info={userInfo}/>} /> : <Route path="/profile" element={<h1>Oops! No user signed in</h1>} />
+            }
+            
+          </Routes>
+          <Footer/>
       </Router>
     </>
   );
