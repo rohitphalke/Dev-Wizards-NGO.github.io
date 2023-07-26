@@ -9,7 +9,7 @@ const Navbar = (props) => {
   }
   return (
     <nav
-      className={"navbar navbar-expand-lg navbar-light bg-light"}
+      className={"navbar navbar-expand-lg navbar-dark bg-dark "}
     >
       <Link className="navbar-brand" to='/'>NGO</Link>
       <button
@@ -27,43 +27,43 @@ const Navbar = (props) => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active mx-3">
-            <Link className="nav-a" to='/'>
+            <Link className="nav-link" to='/'>
               Home
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link className="nav-a" to="/about">
+            <Link className="nav-link" to="/about">
               About
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link className="nav-a" to="/contact">
+            <Link className="nav-link" to="/contact">
               Contact Us
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link className="nav-a" to="/donate">
+            <Link className="nav-link" to="/donate">
               Donate
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link className="nav-a" to="/events">
+            <Link className="nav-link" to="/events">
               Events
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link className="nav-a" to="/gallery">
+            <Link className="nav-link" to="/gallery">
               Gallery
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link className="nav-a" to={props.stat.loginStatus==="Profile" ? "/profile" : "/signup_login"}>
+            <Link className="nav-link" to={props.stat.loginStatus==="Profile" ? "/profile" : "/signup_login"}>
               {props.stat.loginStatus}
             </Link>
           </li>
           {props.stat.loginStatus==="Profile" ? 
             <li className="nav-item mx-3">
-            <Link style={{pointer:'cursor'}} className="nav-a" onClick={logout} >
+            <Link style={{pointer:'cursor'}} className="nav-link" onClick={logout} >
               Log Out
             </Link>
           </li>
@@ -86,8 +86,65 @@ const Navbar = (props) => {
           </button>
         </form> */}
       </div>
-
     </nav>
+          //   <nav
+          //   className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+          //   id="ftco-navbar"
+          // >
+          //   <div className="container">
+          //   <Link className="navbar-brand" to='/'>NGO</Link>
+          //     <button
+          //       className="navbar-toggler"
+          //       type="button"
+          //       data-toggle="collapse"
+          //       data-target="#ftco-nav"
+          //       aria-controls="ftco-nav"
+          //       aria-expanded="false"
+          //       aria-label="Toggle navigation"
+          //     >
+          //       <span className="oi oi-menu" /> Menu
+          //     </button>
+          //     <div className="collapse navbar-collapse" id="ftco-nav">
+          //       <ul className="navbar-nav ml-auto">
+          //         <li className="nav-item active">
+          //         <Link className="nav-link" to='/'> Home</Link>
+          //         </li>
+          //         <li className="nav-item">
+          //         <Link className="nav-link" to="/about">About</Link>
+          //         </li>
+          //         <li className="nav-item">
+          //         <Link className="nav-link" to="/contact">Conatct Us</Link>
+          //         </li>
+          //         <li className="nav-item">
+          //         <Link className="nav-link" to="/events">Events</Link>
+          //         </li>
+          //         <li className="nav-item">
+          //         <Link className="nav-link" to="/gallery">Gallery</Link>
+          //         </li>
+          //         <li className="nav-item mx-3">
+          //    <Link className="nav-link" to={props.stat.loginStatus==="Profile" ? "/profile" : "/signup_login"}>
+          //      {props.stat.loginStatus}
+          //    </Link>
+          //  </li>
+          //  {props.stat.loginStatus==="Profile" ? 
+          //    <li className="nav-item mx-3">
+          //    <Link style={{pointer:'cursor'}} className="nav-link" onClick={logout} >
+          //      Log Out
+          //    </Link>
+          //  </li>
+          //    :
+          //    <li style={{display: 'none'}}></li>
+          //  }
+          //         <button>
+          //         <li className="nav-item cta">
+          //         <Link className="nav-link" to="/gallery">Gallery</Link>
+          //         </li>
+          //         </button>
+
+          //       </ul>
+          //     </div>
+          //   </div>
+          // </nav>
   );
 }
 
