@@ -37,7 +37,6 @@ function App() {
           {
             userInfo.name !== "" ? <Route path="/profile" element={<Profile user_info={userInfo} />} /> : <Route path="/profile" element={<h1>Oops! No user signed in</h1>} />
           }
-
         </Routes>
         <Footer />
       </Router>

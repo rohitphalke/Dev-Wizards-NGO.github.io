@@ -8,6 +8,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { Button } from '@mui/material';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 const photos = [
   {
     src: 'https://www.smilefoundationindia.org/wp-content/uploads/2023/03/Layer-109-1-768x568.png', width: 4, height: 3, caption: "Over 5,000 children empowered with quality education and counting."
@@ -56,7 +58,8 @@ const Gallery = () => {
   const [showCaption, setShowCaption] = useState(false);
   const [Story, setStory] = useState({})
   // const [Text, setText] = useState("Default");
-  const slidesToShow = window.innerWidth > 900 ? 3.5 : 1;
+  // const slidesToShow = window.innerWidth > 200 ? 3 : 1;
+  const slidesToShow = 4
   const slidesToShow2 = window.innerWidth > 900 ? 3.5 : 1;
 
   const [open, setOpen] = React.useState(false);
@@ -84,7 +87,6 @@ const Gallery = () => {
     autoplay: true,
     centerMode: true,
     duration: 500,
-    overScan: 1,
     slidesToShow: slidesToShow,
     pauseOnHover: false
   };
@@ -94,32 +96,37 @@ const Gallery = () => {
     autoplay: true,
     centerMode: true,
     duration: 500,
-    overScan: 1,
     slidesToShow: slidesToShow2,
     pauseOnHover: false,
     dots: false,
     autoplaySpeed: 3000,
+
   };
   const sliderimgstyle = {
-    width: '70%',
-    height: '50%',
-    margin: '2rem',
+    // border: '2px solid #000',
+    width: `${window.innerWidth > 900 ? '350px' : '20%'}`,
+    height: `${window.innerWidth > 900 ? '350px' : '100%'}`,
+    // width: '30%',
+    // maxWidth: '300px',
+    // height: '100%',
+    // maxHeight: '300px',
+    margin: '1em',
     borderRadius: '50%',
     boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.5)',
   }
   const sliderimgstyle2 = {
-    // width: `${window.innerWidth > 900 ? '350px' : '200px'}`,
+    width: `${window.innerWidth > 900 ? '300px' : '200px'}`,
     // height: `${window.innerWidth > 900 ? '400px' : '200px'}`,
-    width: '80%',
-    height: '50%',
+    // width: '100%',
+    height: `${window.innerWidth > 900 ? '300px' : '200px'}`,
     margin: '2rem',
     boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.5)',
   }
   const sliderdivstyle2 = {
-    // width: `${window.innerWidth > 900 ? '350px' : '200px'}`,
-    width: '80%',
+    width: `${window.innerWidth > 900 ? '500px' : '200px'}`,
+    // width: '100%',
     height: '250px',
-    margin: ' 0 2rem',
+    margin: ' 0 1em',
     borderRadius: '0px',
   }
 
@@ -175,9 +182,33 @@ const Gallery = () => {
         width: '100%',
         height: '100%',
         padding: '3rem 0',
+        // border: '2px solid red',
       }}>
-        <Slider {...settings}>
-          <div >
+        <Carousel autoPlay={true} infiniteLoop={true} labels={false} showStatus={false} showIndicators={false} showArrows={false} interval={2000} showThumbs={false}>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+            <img src='https://www.cry.org/wp-content/themes/cry/images/kid-portrait-5.jpg' alt="" style={sliderimgstyle} />
+            <img src='https://www.cry.org/wp-content/themes/cry/images/kid-portrait-1.jpg' alt="" style={sliderimgstyle} />
+            <img src='https://www.cry.org/wp-content/themes/cry/images/kid-portrait-6.jpg' alt="" style={sliderimgstyle} />
+          </div>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+            <img src='https://www.cry.org/wp-content/themes/cry/images/portrait-8.jpg' alt="" style={sliderimgstyle} />
+            <img src='https://www.cry.org/wp-content/themes/cry/images/portrait-9.jpg' alt="" style={sliderimgstyle} />
+            <img src='https://www.cry.org/wp-content/themes/cry/images/kid-portrait-7.jpg' alt="" style={sliderimgstyle} />
+          </div>
+
+        </Carousel>
+        {/* <Slider {...settings}>
+          <div style={{
+            border: '2px solid red',
+          }}>
             <img src='https://www.cry.org/wp-content/themes/cry/images/kid-portrait-5.jpg' alt="" style={sliderimgstyle} />
           </div>
           <div >
@@ -192,7 +223,7 @@ const Gallery = () => {
           <div >
             <img src='https://www.cry.org/wp-content/themes/cry/images/portrait-9.jpg' alt="" style={sliderimgstyle} />
           </div>
-        </Slider>
+        </Slider> */}
       </div>
 
 
@@ -204,6 +235,7 @@ const Gallery = () => {
         margin: '2rem auto',
         borderBottom: '2px solid #000',
         paddingBottom: '0.5rem',
+
         width: `${window.innerWidth > 900 ? 'fit-content' : '80%'} `,
       }}>
         <div>THIS IS THE IMPACT YOU HELPED US ACHIEVE.</div>
@@ -344,7 +376,8 @@ const Gallery = () => {
         fontSize: `${window.innerWidth > 600 ? '2rem' : '1.3rem'} `,
         fontWeight: 'bold',
         textAlign: 'center',
-        margin: '2rem auto',
+        margin: '1rem auto',
+        marginTop: '2rem',
         borderBottom: '2px solid #000',
         paddingBottom: '0.5rem',
         width: 'fit-content',
@@ -358,7 +391,33 @@ const Gallery = () => {
         height: 'fit-content',
         margin: '0 0 3rem 0',
       }}>
-        <Slider {...settings2}>
+        <Carousel autoPlay={true} infiniteLoop={true} labels={false} showStatus={false} showIndicators={false} showArrows={false} interval={2000} showThumbs={false}>
+          {stories.map((story) => (
+            <div className="maheshstory" key={story.id} style={{
+              display: 'flex',
+              flexDirection: `${window.innerWidth > 900 ? 'row' : 'column'}`,
+              justifyContent: 'center',
+              alignItems: 'flex-top',
+            }}>
+              <div className="" >
+                <img src={story.img} alt="" style={sliderimgstyle2} />
+              </div>
+              <div className="" style={sliderdivstyle2} >
+                <div className="story-name" style={{
+                  padding: ' 0 0 0.5rem 0.5rem',
+                  fontStyle: 'italic',
+                  fontWeight: 'bold',
+
+                }}>{story.name}</div>
+                <div className="story-text" style={{
+                  padding: ' 0 0.5rem',
+                }}>{window.innerWidth > 900 ? truncateText(story.text, 55) : truncateText(story.text, 15)}</div>
+                <Button onClick={() => handleButton(story)}>Read More</Button>
+              </div>
+            </div>
+          ))}
+        </Carousel>
+        {/* <Slider {...settings2}>
           {stories.map((story) => (
             <div className="maheshstory" key={story.id} >
               <div className="" >
@@ -378,7 +437,7 @@ const Gallery = () => {
               </div>
             </div>
           ))}
-        </Slider >
+        </Slider > */}
       </div >
 
 
