@@ -13,6 +13,7 @@
     "infinite-react-carousel": "^1.2.11",
     "jquery": "^3.7.0",
     "react": "^18.2.0",
+    "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
     "react-lazy-load": "^4.0.1",
     "react-photo-album": "^2.2.2",
