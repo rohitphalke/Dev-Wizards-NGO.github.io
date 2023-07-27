@@ -117,15 +117,15 @@
 .btn123:hover {
     background: #c03cc0;
 }
-.social-text {
+.social-text123 {
     margin: 10px 0;
     font-size: 16px;
 }
-.social-media {
+.social-media123 {
     display: flex;
     justify-content: center;
 }
-.social-icon {
+.social-icon123 {
     height: 45px;
     width: 45px;
     display: flex;
@@ -139,7 +139,7 @@
 a {
     text-decoration: none;
 }
-.social-icon:hover {
+.social-icon123:hover {
     color: #df4adf;
     border-color: #df4adf;
 }
@@ -337,7 +337,7 @@ a {
     padding: 1.5rem 1.5rem;
     margin-top: 25px;
     border-radius: 50px;
-    box-shadow: 3px 5px 5px #3b5dc499;
+    box-shadow: 2px 4px 5px #3b5dc499;
     flex-direction: column;
     border: 2px solid #22476752;
   }
