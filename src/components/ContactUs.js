@@ -30,19 +30,19 @@ const ContactForm = () => {
           <form action="#" method="POST">
             <h2 className="form-title">Send us a message</h2>
             <div className="form-fields">
-              <div className="form-group">
+              <div className="form-group123">
                 <input type="text" className="fname" placeholder="First Name" />
               </div>
-              <div className="form-group">
+              <div className="form-group123">
                 <input type="text" className="lname" placeholder="Last Name" />
               </div>
-              <div className="form-group">
+              <div className="form-group123">
                 <input type="email" className="email" placeholder="Mail" />
               </div>
-              <div className="form-group">
+              <div className="form-group123">
                 <input type="number" className="phone" placeholder="Phone" />
               </div>
-              <div className="form-group">
+              <div className="form-group123">
                 <textarea name="message" placeholder="Write your message" />
               </div>
             </div>
