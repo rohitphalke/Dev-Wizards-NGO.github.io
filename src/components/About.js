@@ -61,16 +61,16 @@ const About = () => {
         
       </section>
       </div>
-      <section class="ftco-counter" id="section-counter">
+      <section className="ftco-counter" id="section-counter">
         <div >
-          <div class="row">
-            <div class="col-md-3 mb-5 mb-md-0 text-center text-md-left">
-              <h2 class="font-weight-bold" >We're on a mission to help all your problems</h2>
-              <a href="#" class="btn btn-white btn-outline-white">Donate Now</a>
+          <div className="row">
+            <div className="col-md-3 mb-5 mb-md-0 text-center text-md-left">
+              <h2 className="font-weight-bold" >We're on a mission to help all your problems</h2>
+              <a href="#" className="btn btn-white btn-outline-white">Donate Now</a>
             </div>
-            <div class="col-md-9">
-              <div class="row">
-                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div className="col-md-9">
+              <div className="row">
+                <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
                   <div className="block-18 text-center">
                     <div className="text">
                       <strong className="number" data-number="884">0</strong>
@@ -80,34 +80,34 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                  <div class="block-18 text-center">
-                    <div class="text">
-                      <strong class="number" data-number="65000">0</strong>
+                <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                  <div className="block-18 text-center">
+                    <div className="text">
+                      <strong className="number" data-number="65000">0</strong>
                     </div>
-                    <div class="text">
+                    <div className="text">
                       <span>Professional and kind volunteers</span>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                  <div class="block-18 text-center">
-                    <div class="text">
-                      <strong class="number">
+                <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                  <div className="block-18 text-center">
+                    <div className="text">
+                      <strong className="number">
                         <CountUp end={1000} duration={5} />
                       </strong>
                     </div>
-                    <div class="text">
+                    <div className="text">
                       <span>Funds we raised till now on site</span>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                  <div class="block-18 text-center">
-                    <div class="text">
-                      <strong class="number" data-number="500">0</strong>
+                <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                  <div className="block-18 text-center">
+                    <div className="text">
+                      <strong className="number" data-number="500">0</strong>
                     </div>
-                    <div class="text">
+                    <div className="text">
                       <span>Dedicated Donors</span>
                     </div>
                   </div>
