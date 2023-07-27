@@ -13,7 +13,9 @@
 }
 .maheshstory {
   /* border: 2px solid red; */
+  width: 80%;
   padding: 0 1em;
+  margin: 0 auto;
 }
 .maheshcontainer2 {
   padding: 1em 2em;
@@ -71,6 +73,12 @@
     flex-direction: column;
     gap: 50px;
   }
+  .maheshstory {
+    /* border: 2px solid red; */
+    width: 50%;
+    padding: 0 1em;
+    margin: 0 auto;
+  }
 }
 
 /* overlay styles */
@@ -117,6 +125,21 @@
 @media (min-width: 1000px) {
   .maheshoverlay {
     font-size: 1.3rem;
+  }
+  .maheshstory {
+    /* border: 2px solid red; */
+    width: 90%;
+    padding: 0 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .story-text {
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
   }
 }
 
