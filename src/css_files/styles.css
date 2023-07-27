@@ -9,11 +9,11 @@ body{
 body, input,textarea, a{
   font-family: 'Roboto', sans-serif;
 }
-#section-wrapper{
+#section-wrapper123{
   width: 100%;
   padding: 10px;
 }
-.box-wrapper{
+.box-wrapper123{
   position: relative;
   display: table;
   width:1100px;
@@ -21,9 +21,9 @@ body, input,textarea, a{
   margin-top:35px;
   border-radius: 30px;
 }
-.info-wrap{
+.info-wrap123{
   width:35%;
-  height: 525px;
+  height: 551px;
   padding: 40px;
   float: left;
   display: block;
@@ -31,49 +31,49 @@ body, input,textarea, a{
   background: linear-gradient(144deg, rgba(126,39,156,1) 0%, rgba(49,39,157,1) 49%);
   color: #fff;
 }
-.info-title{
+.info-title123{
   text-align: left;
   font-size: 28px;
   letter-spacing: 0.5px;
 }
-.info-sub-title{
+.info-sub-title1234{
   font-size: 18px;
   font-weight: 300;
   margin-top: 17px;
   letter-spacing: 0.5px;
   line-height: 26px;
 }
-.info-details {
+.info-details1234 {
   list-style: none;
-  margin: 60px 0px;
+  margin: 20px 0px;
 }
-.info-details li {
-  margin-top: 25px;
+.info-details1234 li {
+  margin-top: 16px;
   font-size: 18px;
   color: #fff;
 }
-.info-details li i {
+.info-details1234 li i {
   background: #F44770;
   padding: 12px;
   border-radius: 50%;
   margin-right: 5px;
 }
-.info-details li a {
+.info-details1234 li a {
   color: #fff;
   text-decoration: none;
 }
-.info-details li a:hover {
+.info-details1234 li a:hover {
   color: #F44770;
 }
-.social-icons {
+.social-icons1234 {
   list-style: none;
   text-align: center;
   margin: 20px 0px;
 }
-.social-icons li {
+.social-icons1234 li {
   display: inline-block;
 }
-.social-icons li i {
+.social-icons1234 li i {
   background: #F44770;
   color: #fff;
   padding: 15px;
@@ -83,11 +83,11 @@ body, input,textarea, a{
   cursor: pointer;
   transition: all .5s;
 }
-.social-icons li i:hover {
+.social-icons1234 li i:hover {
   background: #fff;
   color: #000000;
 }
-.form-wrap{
+.form-wrap1234{
   width:65%;
   float: right;
   padding:40px 25px 35px 25px;
@@ -100,13 +100,13 @@ body, input,textarea, a{
   font-size: 28px;
   letter-spacing: 0.5px;
 }
-.form-fields{
+.form-fields1234{
   display: table;
   width: 100%;
   padding: 15px 5px 5px 5px;
 }
-.form-fields input,
-.form-fields textarea{
+.form-fields1234 input,
+.form-fields1234 textarea{
   border: none;
   outline:none;
   background: none;
@@ -115,7 +115,7 @@ body, input,textarea, a{
   padding: 20px 10px 20px 5px;
   width:100%
 }
-.form-fields textarea{
+.form-fields1234 textarea{
   height: 150px;
   resize: none;
 }
@@ -127,7 +127,7 @@ body, input,textarea, a{
   border-radius: 25px;
   box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
 }
-.form-fields .form-group:last-child {
+.form-fields1234 .form-group1234:last-child {
   width: 96%;
 }
 .submit-button{
@@ -151,27 +151,27 @@ body, input,textarea, a{
 }
 /* Responsive css */
 @media only screen and (max-width: 767px) {
-  .box-wrapper{
+  .box-wrapper123{
       width: 100%;
   }
-  .info-wrap,
-  .form-wrap{
+  .info-wrap123,
+  .form-wrap1234{
       width: 100%;
       height: inherit;
       float: none;  
   }
-  .info-wrap{
+  .info-wrap123{
       border-radius: 30px 30px 0px 0px;
   }
-  .form-wrap{
+  .form-wrap1234{
       border-radius: 0px 0px 30px 30px;
   }
-  .form-group{
+  .form-group1234{
       width: 100%;
       float: none;
       margin: 25px 0px;
   }
-  .form-fields .form-group:last-child, 
+  .form-fields1234 .form-group1234:last-child, 
   .submit-button{
       width: 100%;
   }

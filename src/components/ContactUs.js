@@ -2,12 +2,12 @@ import React from 'react';
 
 const ContactForm = () => {
   return (
-    <section id="section-wrapper">
-      <div className="box-wrapper">
-        <div className="info-wrap">
-          <h2 className="info-title">ContactUs</h2>
+    <section id="section-wrapper123">
+      <div className="box-wrapper123">
+        <div className="info-wrap123">
+          <h2 className="info-title123">ContactUs</h2>
         
-          <ul className="info-details">
+          <ul className="info-details1234">
             <li>
               <li className="fas fa-phone-alt"></li>
               <span>Phone:</span> <a href="tel:+ 1235 2355 98">+ 987 654 321</a>
@@ -22,14 +22,14 @@ const ContactForm = () => {
             </li>
           </ul>
 
-          <h3 className="info-sub-title">
+          <h3 className="info-sub-title1234">
           We welcome you to get in touch with us using this contact form. Whether you have questions about our programs, want to provide feedback, or are interested in partnerships or volunteering, we appreciate your interest and support. Thank you! </h3>
 
         </div>
-        <div className="form-wrap">
+        <div className="form-wrap1234">
           <form action="#" method="POST">
             <h2 className="form-title">Send us a message</h2>
-            <div className="form-fields">
+            <div className="form-fields1234">
               <div className="form-group123">
                 <input type="text" className="fname" placeholder="First Name" />
               </div>
