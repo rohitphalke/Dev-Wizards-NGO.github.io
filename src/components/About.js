@@ -4,63 +4,47 @@ import CountUp from 'react-countup';
 import about_photo from '../images_videos/services-3.jpg';
 import '../css_files/about.css';
 import { Carousel } from 'react-responsive-carousel';
-
-const sliderimgstyle = {
-  // border: '2px solid #000',
-  width: `${window.innerWidth > 900 ? '350px' : '20%'}`,
-  height: `${window.innerWidth > 900 ? '350px' : '100%'}`,
-  // width: '30%',
-  // maxWidth: '300px',
-  // height: '100%',
-  // maxHeight: '300px',
-  margin: '1em',
-  borderRadius: '50%',
-  boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.5)',
-}
-const sliderimgstyle2 = {
-  width: `${window.innerWidth > 900 ? '300px' : '200px'}`,
-  // height: `${window.innerWidth > 900 ? '400px' : '200px'}`,
-  // width: '100%',
-  height: `${window.innerWidth > 900 ? '300px' : '200px'}`,
-  margin: '2rem',
-  boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.5)',
-}
-const sliderdivstyle2 = {
-  width: `${window.innerWidth > 900 ? '500px' : '200px'}`,
-  // width: '100%',
-  height: '250px',
-  margin: ' 0 1em',
-  borderRadius: '0px',
-}
+import img1 from "../images_videos/team-1.jpg";
+import img2 from "../images_videos/team-2.jpg";
+import img3 from "../images_videos/team-3.jpg";
+import img4 from "../images_videos/team-4.jpg";
+import '../css_files/udit.css'; // Replace 'your-css-file-path.css' with the actual path to your CSS file
+ // Replace 'your-css-file-path.css' with the actual path to your CSS file
+import '../css_files/animate.css';
+import '../css_files/owl.carousel.min.css';
+import '../css_files/owl.theme.default.min.css';
+import '../css_files/magnific-popup.css';
+import '../css_files/bootstrap-datepicker.css';
+import '../css_files/jquery.timepicker.css';
+import '../css_files/flaticon.css';
+import '../fonts/flaticon/font/flaticon.css';
 
 
 const About = () => {
   return (
     <>
-      <div className="my-5 px-4">
-        <u className='my-2'>
-          <h2 className="fw-bold h-font text-center">About Us</h2>
-        </u>
-        <p className="text-center mt-3 text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi soluta
-          voluptatem cupiditate incidunt
-          totam,<br /> tenetur quis fuga nulla suscipit ea dicta nemo perferendis debitis expedita reiciendis molestias
-          delectus officiis temporibus.</p>
-      </div>
-      <div>
-      <section >
-          <div className="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
-            <h3 className="mb-3 mx-3">Lorem ipsum dolor sit.</h3>
-            <p className='mx-5'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Id aliquam, aut in molestiae temporibus
-              commodi quos officia tempora harum a quasi ipsum mollitia ipsa..</p>
+        <section className="ftco-section ftco-no-pt ftco-no-pb">
+          <div className="container">
+            <div className="row d-flex no-gutters">
+              <div className="col-md-6 d-flex order-md-last">
+                <div className="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style={{backgroundImage: 'url(images/about-1.jpg)'}}>
+                </div>
+              </div>
+              <div className="col-md-6 pr-md-5 py-md-5">
+                <div className="heading-section pt-md-5 mb-4">
+                  <span className="subheading">About us</span>
+                  <h2 className="mb-2">Give a helping hand to a needy people</h2>
+                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                  <p><a href="#" className="btn btn-secondary">Become a Volunteer</a></p>
+                </div>
+              </div>
+              <div className="col-md-6 pr-md-5 py-md-5">
+              <img className="img-fluid" src={about_photo} alt="" />
+              </div>
+            </div>
           </div>
-          <div className="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
-            <img style={{ width: "50%", height: "60%" }} src={about_photo} alt="about_photo" className='about_photo' />
-          </div>
-        
-      </section>
-      </div>
+        </section>
       <section className="ftco-counter" id="section-counter">
         <div >
           <div className="row">
@@ -72,9 +56,11 @@ const About = () => {
               <div className="row">
                 <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
                   <div className="block-18 text-center">
-                    <div className="text">
-                      <strong className="number" data-number="884">0</strong>
-                    </div>
+                  <div className="text">
+                        <strong className="number">
+                        <CountUp end={10000} duration={5} />
+                      </strong>
+                        </div>
                     <div className="text">
                       <span>Donation Campaigns are running</span>
                     </div>
@@ -117,35 +103,70 @@ const About = () => {
           </div>
         </div>
       </section>
-      <div style={{
-        background: 'white 100%',
-        width: '100%',
-        height: '100%',
-        padding: '3rem 0',
-        // border: '2px solid red',
-      }}>
-        <Carousel autoPlay={true} infiniteLoop={true} labels={false} showStatus={false} showIndicators={false} showArrows={false} interval={2000} showThumbs={false}>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
-            <img src='https://www.cry.org/wp-content/themes/cry/images/kid-portrait-5.jpg' alt="" style={sliderimgstyle} />
-            <img src='https://www.cry.org/wp-content/themes/cry/images/kid-portrait-1.jpg' alt="" style={sliderimgstyle} />
-            <img src='https://www.cry.org/wp-content/themes/cry/images/kid-portrait-6.jpg' alt="" style={sliderimgstyle} />
-          </div>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
-            <img src='https://www.cry.org/wp-content/themes/cry/images/portrait-8.jpg' alt="" style={sliderimgstyle} />
-            <img src='https://www.cry.org/wp-content/themes/cry/images/portrait-9.jpg' alt="" style={sliderimgstyle} />
-            <img src='https://www.cry.org/wp-content/themes/cry/images/kid-portrait-7.jpg' alt="" style={sliderimgstyle} />
-          </div>
 
-        </Carousel>
-        </div>
+      <section className="ftco-section ftco-no-pt">
+          <div className="container">
+            <div className="row justify-content-center pb-5 mb-3">
+              <div className="col-md-7 heading-section text-center ftco-animate">
+                <span className="subheading">Volunteer</span>
+                <h2>Our Expert Volunteer</h2>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-6 col-lg-3">
+                <div className="volunteer">
+                  <div
+                    className="img"
+                   
+                  />
+                  <img className="img-fluid" src={img1} alt="" />
+                  <div className="text text-1">
+                    <h3>Alex Martin</h3>
+                    <span>Volunteer</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-lg-3">
+                <div className="volunteer">
+                  <div
+                    className="img"
+                  />
+                  <img className="img-fluid" src={img2} alt="" />
+                  <div className="text text-2">
+                    <h3>Cedrick Brown</h3>
+                    <span>Volunteer</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-lg-3">
+                <div className="volunteer">
+                  <div
+                    className="img"
+                  
+                  />
+                  <img className="img-fluid" src={img3} alt="" />
+                  <div className="text text-3">
+                    <h3>John Wick</h3>
+                    <span>Volunteer</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-lg-3">
+                <div className="volunteer">
+                  <div
+                    className="img"
+                  
+                  />
+                  <img className="img-fluid" src={img4} alt="" />
+                  <div className="text text-4">
+                    <h3>Max Love</h3>
+                    <span>Volunteer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </>
   )
 }
