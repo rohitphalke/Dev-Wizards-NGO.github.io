@@ -1,11 +1,12 @@
 import './App.css';
 import './css_files/rohit.css';
+import './css_files/styles.css';
 import Login from './components/Login'
 import Navbar from './components/Navbar'
 import Gallery from './components/Gallery'
 import Home from './components/Home'
 import About from './components/About'
-import Contact from './components/Contact'
+import ContactUs from './components/ContactUs';
 import Donate from './components/Donate'
 import Footer from './components/Footer'
 import Profile from './components/Profile'
@@ -30,7 +31,7 @@ function App() {
           <Route path="/signup_login" element={<Login user_stat={{ userInfo, setUserInfo, setLoginStatus }} />} />
           {/* <Route path="/signup_login" component={Login} user_stat={{userInfo, setUserInfo, setLoginStatus}}/> */}
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
