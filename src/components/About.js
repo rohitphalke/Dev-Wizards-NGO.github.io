@@ -4,63 +4,49 @@ import CountUp from 'react-countup';
 import about_photo from '../images_videos/services-3.jpg';
 import '../css_files/about.css';
 import { Carousel } from 'react-responsive-carousel';
+import img1 from "../images_videos/team-1.jpg";
+import img2 from "../images_videos/team-2.jpg";
+import img3 from "../images_videos/team-3.jpg";
+import img4 from "../images_videos/team-4.jpg";
+import img5 from "../images_videos/pic1.1.png";
 
-const sliderimgstyle = {
-  // border: '2px solid #000',
-  width: `${window.innerWidth > 900 ? '350px' : '20%'}`,
-  height: `${window.innerWidth > 900 ? '350px' : '100%'}`,
-  // width: '30%',
-  // maxWidth: '300px',
-  // height: '100%',
-  // maxHeight: '300px',
-  margin: '1em',
-  borderRadius: '50%',
-  boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.5)',
-}
-const sliderimgstyle2 = {
-  width: `${window.innerWidth > 900 ? '300px' : '200px'}`,
-  // height: `${window.innerWidth > 900 ? '400px' : '200px'}`,
-  // width: '100%',
-  height: `${window.innerWidth > 900 ? '300px' : '200px'}`,
-  margin: '2rem',
-  boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.5)',
-}
-const sliderdivstyle2 = {
-  width: `${window.innerWidth > 900 ? '500px' : '200px'}`,
-  // width: '100%',
-  height: '250px',
-  margin: ' 0 1em',
-  borderRadius: '0px',
-}
-
+const mystyle = {
+  color: "orange",
+  // backgroundColor: "DodgerBlue",
+  fontFamily: "Arial",
+  fontSize: 50 
+};
+const mystyle2 = {
+  // backgroundColor: "DodgerBlue",
+  // backgroundColor: "red"
+  // fontSize: 5000 
+};
 
 const About = () => {
   return (
     <>
-      <div className="my-5 px-4">
-        <u className='my-2'>
-          <h2 className="fw-bold h-font text-center">About Us</h2>
-        </u>
-        <p className="text-center mt-3 text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi soluta
-          voluptatem cupiditate incidunt
-          totam,<br /> tenetur quis fuga nulla suscipit ea dicta nemo perferendis debitis expedita reiciendis molestias
-          delectus officiis temporibus.</p>
-      </div>
-      <div>
-      <section >
-          <div className="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
-            <h3 className="mb-3 mx-3">Lorem ipsum dolor sit.</h3>
-            <p className='mx-5'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Id aliquam, aut in molestiae temporibus
-              commodi quos officia tempora harum a quasi ipsum mollitia ipsa..</p>
+      <section className="ftco-section ftco-no-pt ftco-no-pb">
+        <div className="container">
+          <div className="row d-flex no-gutters">
+            <div className="col-md-6 d-flex order-md-last">
+              <div className="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style={{ backgroundImage: 'url(images/about-1.jpg)' }}>
+              </div>
+            </div>
+            <div className="col-md-6 pr-md-5 py-md-5">
+              <div className="heading-section pt-md-5 mb-4">
+                <span className="subheading">About us</span>
+                <h2 className="mb-2">Give a helping hand to a needy people</h2>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p><a href="#" className="btn btn-secondary">Become a Volunteer</a></p>
+              </div>
+            </div>
+            <div className="col-md-6 pr-md-5 py-md-5">
+              <img className="img-fluid" src={about_photo} alt="" />
+            </div>
           </div>
-          <div className="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
-            <img style={{ width: "50%", height: "60%" }} src={about_photo} alt="about_photo" className='about_photo' />
-          </div>
-        
+        </div>
       </section>
-      </div>
       <section className="ftco-counter" id="section-counter">
         <div >
           <div className="row">
@@ -70,47 +56,53 @@ const About = () => {
             </div>
             <div className="col-md-9">
               <div className="row">
-                <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                  <div className="block-18 text-center">
-                    <div className="text">
-                      <strong className="number" data-number="884">0</strong>
+                <div className="col-md-6 col-lg-3 d-flex justify-content-center">
+                <div className="text-center" >
+                <div className="text"  style={mystyle2}>
+                      <strong className="number">
+                        <CountUp style={mystyle} end={900} duration={5} />
+                      </strong>
                     </div>
                     <div className="text">
                       <span>Donation Campaigns are running</span>
                     </div>
-                  </div>
                 </div>
-                <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                  <div className="block-18 text-center">
-                    <div className="text">
-                      <strong className="number" data-number="65000">0</strong>
+                </div>
+                <div className="col-md-6 col-lg-3 d-flex justify-content-center">
+                <div className="text-center">
+                <div className="text">
+                      <strong className="number">
+                        <CountUp style={mystyle} end={1250} duration={5} />
+                      </strong>
                     </div>
                     <div className="text">
                       <span>Professional and kind volunteers</span>
                     </div>
-                  </div>
                 </div>
-                <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                  <div className="block-18 text-center">
-                    <div className="text">
+                </div>
+                <div className="col-md-6 col-lg-3 d-flex justify-content-center">
+                <div className="text-center">
+                <div className="text">
                       <strong className="number">
-                        <CountUp end={1000} duration={5} />
+                        <CountUp style={mystyle} end={3000} duration={5} />
                       </strong>
                     </div>
                     <div className="text">
                       <span>Funds we raised till now on site</span>
                     </div>
-                  </div>
                 </div>
-                <div className="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                  <div className="block-18 text-center">
-                    <div className="text">
-                      <strong className="number" data-number="500">0</strong>
+                </div>
+                <div className="col-md-6 col-lg-3 d-flex justify-content-center">
+                <div className="text-center">
+                <div className="text">
+                      <strong className="number">
+                        <CountUp style={mystyle} end={369} duration={5} />
+                      </strong>
                     </div>
                     <div className="text">
                       <span>Dedicated Donors</span>
                     </div>
-                  </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -118,34 +110,10 @@ const About = () => {
         </div>
       </section>
       <div style={{
-        background: 'white 100%',
-        width: '100%',
-        height: '100%',
-        padding: '3rem 0',
-        // border: '2px solid red',
+        alignContent: 'center',
       }}>
-        <Carousel autoPlay={true} infiniteLoop={true} labels={false} showStatus={false} showIndicators={false} showArrows={false} interval={2000} showThumbs={false}>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
-            <img src='https://www.cry.org/wp-content/themes/cry/images/kid-portrait-5.jpg' alt="" style={sliderimgstyle} />
-            <img src='https://www.cry.org/wp-content/themes/cry/images/kid-portrait-1.jpg' alt="" style={sliderimgstyle} />
-            <img src='https://www.cry.org/wp-content/themes/cry/images/kid-portrait-6.jpg' alt="" style={sliderimgstyle} />
-          </div>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
-            <img src='https://www.cry.org/wp-content/themes/cry/images/portrait-8.jpg' alt="" style={sliderimgstyle} />
-            <img src='https://www.cry.org/wp-content/themes/cry/images/portrait-9.jpg' alt="" style={sliderimgstyle} />
-            <img src='https://www.cry.org/wp-content/themes/cry/images/kid-portrait-7.jpg' alt="" style={sliderimgstyle} />
-          </div>
-
-        </Carousel>
-        </div>
+        <img className="img" src={img5} alt="" />
+      </div>
     </>
   )
 }

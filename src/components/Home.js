@@ -291,11 +291,11 @@ const Home = () => {
         }}>
           <img className="img" src={img6} alt="" />
         </div>
-        <div style={{
+        {/* <div style={{
           alignContent: 'center',
         }}>
           <img className="img" src={img5} alt="" />
-        </div>
+        </div> */}
 
       
        
