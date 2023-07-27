@@ -1,19 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+
 .events-filter {
+  color: black;
+  padding: 0 1rem;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin-top: -1.25rem;
+}
+
+.events-filter__control {
+  display: flex;
+  width: 100%;
   align-items: center;
-  margin: 20px 0;
+  justify-content: center; /* Center for laptops */
+  margin: 1.5rem 0;
 }
 
-.filter-label {
-  font-size: 16px;
-  border-radius: none;
+.events-filter label {
+  font-weight: bold;
+  font-size: 1.35rem;
+  font-family: "Roboto Slab", serif;
+  margin-right: 1rem;
 }
 
-.filter-select {
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  outline: 0;
-  font-family: sans-serif;
+.events-filter select {
+  font: inherit;
+  color: black;
+  padding: 0.5rem 3rem;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: lightgray;
+  opacity: 0.5;
+  z-index: 1;
+  line-height: 1.5;
+  cursor: pointer;
+  margin-top: 0.15rem;
+  transition: background-color 0.2s, transform 0.2s ease;
+}
+
+.events-filter select:checked {
+  opacity: 1;
+}
+
+/* Add media query for responsive styles */
+@media screen and (max-width: 768px) {
+  .events-filter__control {
+    flex-direction: column;
+    justify-content: space-evenly; /* Space evenly for mobiles */
+    align-items: center;
+  }
+
+  .events-filter label {
+    margin-bottom: 0.5rem;
+  }
+
+  .events-filter select {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 250px;
+    margin-left: 0;
+  }
+}
+
+.car-item {
+  height: 70vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Customize shadow as needed */
+}
+
+@media screen and (max-width: 768px) {
+  .car-item {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .car-item {
+    height: 30vh;
+  }
+}
+
+.events-filter__control {
+  border: 5px solid;
+  border-image: linear-gradient(to right, #ff00ff, #00ffff);
+  border-image-slice: 1;
+
+  /* Add a subtle box shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  /* Add padding to create space between content and border */
+  padding: 20px;
+
+  /* Add some border-radius for rounded corners */
+  border-radius: 20px;
+
+  /* Add a background color */
+  background-color: #f0f0f0;
+  margin-bottom: 2rem;
+  width: fit-content;
 }

@@ -86,18 +86,18 @@ const onchange_sign_up = (event) => {
                     <input type="password" placeholder="Password" name='sign_in_password' defaultValue="" autoComplete='current-password' required/>
                 </div>
                 <button type="submit" value="Login" className="btn123">Sign In</button>
-                <p className="social-text">Or Sign in with our NGO</p>
-                <div className="social-media">
-                    <a href="/" className="social-icon">
+                <p className="social-text123">Or Sign in with our NGO</p>
+                <div className="social-media123">
+                    <a href="/" className="social-icon123">
                         <i className="fab fa-facebook"></i>
                     </a>
-                    <a href="/" className="social-icon">
+                    <a href="/" className="social-icon123">
                         <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="/" className="social-icon">
+                    <a href="/" className="social-icon123">
                         <i className="fab fa-google"></i>
                     </a>
-                    <a href="/" className="social-icon">
+                    <a href="/" className="social-icon123">
                         <i className="fab fa-linkedin-in"></i>
                     </a>
                 </div>
@@ -122,18 +122,18 @@ const onchange_sign_up = (event) => {
                     <input type="password" placeholder="Password" id='sign_up_password' onChange={onchange_sign_up} name='password' autoComplete='current-password' required/>
                 </div>
                 <button type="submit" value="Sign up" className="btn123" >Sign Up</button>
-                <p className="social-text">Or Sign in with social platform</p>
-                <div className="social-media">
-                    <a href="/" className="social-icon">
+                <p className="social-text123">Or Sign in with social platform</p>
+                <div className="social-media123">
+                    <a href="/" className="social-icon123">
                         <i className="fab fa-facebook"></i>
                     </a>
-                    <a href="/" className="social-icon">
+                    <a href="/" className="social-icon123">
                         <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="/" className="social-icon">
+                    <a href="/" className="social-icon123">
                         <i className="fab fa-google"></i>
                     </a>
-                    <a href="/" className="social-icon">
+                    <a href="/" className="social-icon123">
                         <i className="fab fa-linkedin-in"></i>
                     </a>
                 </div>

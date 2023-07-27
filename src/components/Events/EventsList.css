@@ -1,8 +1,30 @@
-.events-list {
+/* .events-list {
   margin-top: 20px;
 }
 
 .no-events {
   color: #f00;
   font-size: 20px;
+} */
+
+/* .events-list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+}
+
+
+.SingleEvent {
+  width: 48%;
+} */
+
+.events-list {
+  justify-content: space-between !important;
+}
+
+.no-events {
+  margin-top: 15px !important;
+
+  font-weight: bolder;
+  color: red;
 }

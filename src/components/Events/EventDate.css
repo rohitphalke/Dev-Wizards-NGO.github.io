@@ -1,12 +1,6 @@
-.EventDate {
-  margin-bottom: 10px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
-.EventDate p {
-  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-  color: black;
-  padding: 20px 8px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: bold;
+.EventDate {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
 }
