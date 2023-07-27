@@ -8,9 +8,11 @@ const EventDate = (props) => {
   const year = props.date.getFullYear();
 
   return (
-    <h4 className="EventDate">
-      <p>{month}  {day}  {year}</p>
-    </h4>
+    <div className="EventDate">
+      <p>
+        {month} {day}, {year}
+      </p>
+    </div>
   );
 };
 

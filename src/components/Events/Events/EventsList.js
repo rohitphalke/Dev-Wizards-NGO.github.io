@@ -3,12 +3,12 @@ import SingleEvent from "./SingleEvent";
 import "./EventsList.css";
 
 const EventsList = (props) => {
-  if (props.eventItems.length === 0) {
-    return <h2 className="no-events">Oops! No events found.</h2>;
-  }
+  // if (props.eventItems.length === 0) {
+  //   return <h2 className="no-events">Oops! No events found.</h2>;
+  // }
 
   return (
-    <div className="events-list">
+    <div className="events-list d-flex flex-row mx-5 events-list">
       {props.eventItems.map((event) => (
         <SingleEvent key={event.id} singleYear={event.events} />
       ))}

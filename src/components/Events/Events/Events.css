@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+.reveal {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0.1;
+  transition: 1.5s all ease;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.events-tabs {
+  margin-top: 5vh;
+}
+/* .car-item {
+  height: 70vh;
+} */
+
+@media screen and (max-width: 768px) {
+  .car-item {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .car-item {
+    height: 30vh;
+  }
+}
+.car {
+  background-color: red;
+}
+
+.events-cards {
+  margin: 0;
+}
+
+.carous-title {
+  font-size: 3rem;
+  color: darkgreen;
+  font-family: "Open Sans", sans-serif;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #777, 0 0 40px #777,
+      0 0 50px #777, 0 0 60px #777, 0 0 70px #777;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #777, 0 0 40px #777,
+      0 0 50px #777, 0 0 60px #777, 0 0 70px #777;
+  }
+}
+.carous-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: rgba(0, 128, 0, 0.2);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carous-title:hover::after {
+  opacity: 1;
+}
+
+.carous-details {
+  font-size: 1.3rem;
+  font-family: "Lobster", cursive;
+  font-weight: 600;
+  /* color: darkmagenta;
+  background-color: palevioletred; */
+  opacity: 0.75;
+  display: inline;
+  color: blue;
+  text-shadow: 0 0 7px hotpink, 0 0 10px whitesmoke, 0 0 21px red, 0 0 42px red,
+    0 0 82px beige, 0 0 92px bisque, 0 0 102px orange, 0 0 151px lightblue;
+}
+
+/* Adjust the layout for small screens */
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .carousel .carousel-caption {
+    padding: 10px;
+  }
+}
+
+.carousel-inner {
+  transition: transform 2s ease; /* Adjust the time (2s) to control the sliding speed */
+}
+
+.carous-title {
+  font-size: 3rem;
+  color: darkgreen;
+  font-family: "Open Sans", sans-serif;
+  /* Remove the previous animation */
+}
+
+.car-sizing {
+  /* border: 0.25rem solid rgba(205, 63, 23, 0.588);
+  border-radius: 1rem; */
+  -webkit-box-shadow: 0px 0px 3rem 0.1rem rgba(52, 152, 219, 0.9);
+  -moz-box-shadow: 0px 0px 3rem 0.1rem rgba(52, 152, 219, 0.9);
+  box-shadow: 0px 0px 3rem 0.1rem rgba(52, 152, 219, 0.9);
+
+  clip-path: ellipse(60% 50% at 50% 50%);
+}
+
+.carousel-item img {
+  object-fit: cover !important;
+  border-radius: 0.25rem !important; /* Adjust the border radius as needed */
+  /* border: 0.25rem solid black !important;
+  border-; */
+}
+
+.car-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  clip-path: ellipse(70% 70% at 50% 50%);
+  overflow: hidden;
+  margin-top: -0.5rem;
+}
+/* Custom CSS to shift the position of the carousel arrow */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  box-shadow: inset 0 0 10px #3498db;
+  background-color: #2c3e50;
+}
+
+.carousel-control-prev {
+  left: -7%; /* Adjust the left position as needed */
+}
+
+.carousel-control-next {
+  right: -7%; /* Adjust the right position as needed */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: 2rem; /* Increase the size of the arrow icons */
+  color: white; /* Change the color of the arrow icons to white */
+}
+
+.carousel-caption {
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+@media screen and (max-height: 500px) {
+  .carousel-caption {
+    display: none;
+  }
+}
