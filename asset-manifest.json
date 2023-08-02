@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dev-Wizards-NGO.github.io/static/css/main.9d1e32cb.css",
-    "main.js": "/Dev-Wizards-NGO.github.io/static/js/main.4f3817ed.js",
+    "main.js": "/Dev-Wizards-NGO.github.io/static/js/main.f9f58c24.js",
     "static/js/787.2ae911e3.chunk.js": "/Dev-Wizards-NGO.github.io/static/js/787.2ae911e3.chunk.js",
     "static/media/pic1.2.png": "/Dev-Wizards-NGO.github.io/static/media/pic1.2.1f208d972b1c19d786fb.png",
     "static/media/pic1.1.png": "/Dev-Wizards-NGO.github.io/static/media/pic1.1.bc6a2138b7b752c1ff47.png",
@@ -28,11 +28,11 @@
     "static/media/Flaticon.woff2": "/Dev-Wizards-NGO.github.io/static/media/Flaticon.ac3b0d971d397dd8661b.woff2",
     "index.html": "/Dev-Wizards-NGO.github.io/index.html",
     "main.9d1e32cb.css.map": "/Dev-Wizards-NGO.github.io/static/css/main.9d1e32cb.css.map",
-    "main.4f3817ed.js.map": "/Dev-Wizards-NGO.github.io/static/js/main.4f3817ed.js.map",
+    "main.f9f58c24.js.map": "/Dev-Wizards-NGO.github.io/static/js/main.f9f58c24.js.map",
     "787.2ae911e3.chunk.js.map": "/Dev-Wizards-NGO.github.io/static/js/787.2ae911e3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d1e32cb.css",
-    "static/js/main.4f3817ed.js"
+    "static/js/main.f9f58c24.js"
   ]
 }
