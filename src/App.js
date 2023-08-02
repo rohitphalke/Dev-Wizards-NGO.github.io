@@ -27,6 +27,7 @@ function App() {
         <Navbar stat={{ loginStatus, setLoginStatus }} />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Dev-Wizards-NGO.github.io" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/signup_login" element={<Login user_stat={{ userInfo, setUserInfo, setLoginStatus }} />} />
           {/* <Route path="/signup_login" component={Login} user_stat={{userInfo, setUserInfo, setLoginStatus}}/> */}
