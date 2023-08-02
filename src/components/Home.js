@@ -42,7 +42,7 @@ const Home = () => {
                     </h4>
                     <p className="d-flex align-items-center">
                       <span>$</span>
-                      <strong class="number">
+                      <strong className="number">
                         <CountUp end={1000} duration={5} />
                       </strong>
                     </p>
@@ -149,7 +149,7 @@ const Home = () => {
                       </div>
                       <div className="desc">
                         <div className="text">
-                        <strong class="number">
+                        <strong className="number">
                         <CountUp end={10000} duration={5} />
                       </strong>
                         </div>
@@ -166,7 +166,7 @@ const Home = () => {
                       </div>
                       <div className="desc">
                         <div className="text">
-                        <strong class="number">
+                        <strong className="number">
                         <CountUp end={7000} duration={5} />
                       </strong>
                         </div>
@@ -291,11 +291,11 @@ const Home = () => {
         }}>
           <img className="img" src={img6} alt="" />
         </div>
-        <div style={{
+        {/* <div style={{
           alignContent: 'center',
         }}>
           <img className="img" src={img5} alt="" />
-        </div>
+        </div> */}
 
       
        
