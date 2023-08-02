@@ -35,7 +35,7 @@ const Login = (props) => {
 
     if(props.user_stat.userInfo.username===username && props.user_stat.userInfo.password===password){
         props.user_stat.setLoginStatus("Profile")
-        navigate('/');
+        navigate('/Dev-Wizards-NGO.github.io');
     }
     else{
         alert('Incorrect username or password!');
@@ -101,7 +101,7 @@ const onchange_sign_up = (event) => {
                         <i className="fab fa-linkedin-in"></i>
                     </a>
                 </div>
-                <p className="account-text">Don't have an account? <Link to="/signup_login" id="sign-up-btn2" onClick={onclick_sign_up_btn2}>Sign up</Link></p>
+                <p className="account-text">Don't have an account? <Link to="/Dev-Wizards-NGO.github.io/signup_login" id="sign-up-btn2" onClick={onclick_sign_up_btn2}>Sign up</Link></p>
             </form>
             <form onSubmit={onsubmit} className="sign-up-form">
                 <h2 className="title123">Sign up</h2>
@@ -137,7 +137,7 @@ const onchange_sign_up = (event) => {
                         <i className="fab fa-linkedin-in"></i>
                     </a>
                 </div>
-                <p className="account-text">Already have an account? <Link to="/signup_login" id="sign-in-btn2" onClick={onclick_sign_in_btn2}>Sign in</Link></p>
+                <p className="account-text">Already have an account? <Link to="/Dev-Wizards-NGO.github.io/signup_login" id="sign-in-btn2" onClick={onclick_sign_in_btn2}>Sign in</Link></p>
             </form>
         </div>
         <div className="panels-container">
