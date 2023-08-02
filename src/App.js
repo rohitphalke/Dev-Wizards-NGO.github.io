@@ -28,16 +28,16 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Dev-Wizards-NGO.github.io" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/signup_login" element={<Login user_stat={{ userInfo, setUserInfo, setLoginStatus }} />} />
+          <Route path="/Dev-Wizards-NGO.github.io/home" element={<Home />} />
+          <Route path="/Dev-Wizards-NGO.github.io/signup_login" element={<Login user_stat={{ userInfo, setUserInfo, setLoginStatus }} />} />
           {/* <Route path="/signup_login" component={Login} user_stat={{userInfo, setUserInfo, setLoginStatus}}/> */}
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/donate" element={<Donate />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/Dev-Wizards-NGO.github.io/about" element={<About />} />
+          <Route path="/Dev-Wizards-NGO.github.io/contact" element={<ContactUs />} />
+          <Route path="/Dev-Wizards-NGO.github.io/donate" element={<Donate />} />
+          <Route path="/Dev-Wizards-NGO.github.io/events" element={<Events />} />
+          <Route path="/Dev-Wizards-NGO.github.io/gallery" element={<Gallery />} />
           {
-            userInfo.name !== "" ? <Route path="/profile" element={<Profile user_info={userInfo} />} /> : <Route path="/profile" element={<h1>Oops! No user signed in</h1>} />
+            userInfo.name !== "" ? <Route path="/Dev-Wizards-NGO.github.io/profile" element={<Profile user_info={userInfo} />} /> : <Route path="/Dev-Wizards-NGO.github.io/profile" element={<h1>Oops! No user signed in</h1>} />
           }
         </Routes>
         <Footer />
