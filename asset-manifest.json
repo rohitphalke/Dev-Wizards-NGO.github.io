@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/Dev-Wizards-NGO.github.io/static/css/main.b66e9772.css",
-    "main.js": "/Dev-Wizards-NGO.github.io/static/js/main.a38a060d.js",
+    "main.css": "/Dev-Wizards-NGO.github.io/static/css/main.9d1e32cb.css",
+    "main.js": "/Dev-Wizards-NGO.github.io/static/js/main.df32eadc.js",
     "static/js/787.2ae911e3.chunk.js": "/Dev-Wizards-NGO.github.io/static/js/787.2ae911e3.chunk.js",
     "static/media/pic1.2.png": "/Dev-Wizards-NGO.github.io/static/media/pic1.2.1f208d972b1c19d786fb.png",
-    "static/media/about.png": "/Dev-Wizards-NGO.github.io/static/media/about.53068e501c84dd7e25a3.png",
     "static/media/pic1.1.png": "/Dev-Wizards-NGO.github.io/static/media/pic1.1.bc6a2138b7b752c1ff47.png",
     "static/media/services-3.jpg": "/Dev-Wizards-NGO.github.io/static/media/services-3.11b7646994b34e81f379.jpg",
     "static/media/services-2.jpg": "/Dev-Wizards-NGO.github.io/static/media/services-2.e9fdb7497c72309bdbed.jpg",
     "static/media/services-1.jpg": "/Dev-Wizards-NGO.github.io/static/media/services-1.05213b56423cfeaca184.jpg",
     "static/media/services-4.jpg": "/Dev-Wizards-NGO.github.io/static/media/services-4.a06ff7218ca2bc9eb841.jpg",
+    "static/media/team-1.jpg": "/Dev-Wizards-NGO.github.io/static/media/team-1.11a03cae42462a62885f.jpg",
+    "static/media/team-2.jpg": "/Dev-Wizards-NGO.github.io/static/media/team-2.c19ec39c8753490a88ba.jpg",
     "static/media/moroccan-flower-dark.png": "/Dev-Wizards-NGO.github.io/static/media/moroccan-flower-dark.8fffdc8df6ecbaeb111f.png",
+    "static/media/team-4.jpg": "/Dev-Wizards-NGO.github.io/static/media/team-4.ba654bfb7ae1385ec92c.jpg",
+    "static/media/team-3.jpg": "/Dev-Wizards-NGO.github.io/static/media/team-3.79e03766ce5fbe877fb9.jpg",
     "static/media/qrcode.png": "/Dev-Wizards-NGO.github.io/static/media/qrcode.aa9e89745e37e3079294.png",
     "static/media/Flaticon.svg": "/Dev-Wizards-NGO.github.io/static/media/Flaticon.12daf492acf8abfb6689.svg",
     "static/media/thank-you.png": "/Dev-Wizards-NGO.github.io/static/media/thank-you.530238d12646eb5d4b64.png",
@@ -24,12 +27,12 @@
     "static/media/Flaticon.woff": "/Dev-Wizards-NGO.github.io/static/media/Flaticon.a5eb2d6c58498340a105.woff",
     "static/media/Flaticon.woff2": "/Dev-Wizards-NGO.github.io/static/media/Flaticon.ac3b0d971d397dd8661b.woff2",
     "index.html": "/Dev-Wizards-NGO.github.io/index.html",
-    "main.b66e9772.css.map": "/Dev-Wizards-NGO.github.io/static/css/main.b66e9772.css.map",
-    "main.a38a060d.js.map": "/Dev-Wizards-NGO.github.io/static/js/main.a38a060d.js.map",
+    "main.9d1e32cb.css.map": "/Dev-Wizards-NGO.github.io/static/css/main.9d1e32cb.css.map",
+    "main.df32eadc.js.map": "/Dev-Wizards-NGO.github.io/static/js/main.df32eadc.js.map",
     "787.2ae911e3.chunk.js.map": "/Dev-Wizards-NGO.github.io/static/js/787.2ae911e3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b66e9772.css",
-    "static/js/main.a38a060d.js"
+    "static/css/main.9d1e32cb.css",
+    "static/js/main.df32eadc.js"
   ]
 }
